@@ -351,15 +351,14 @@ async function fetchWeather(lang = 'no') {
             forecasts.push({ date, data: entry.data });
         }
         
-        const iconPromises = forecasts.map(f => getWeatherIcon(f.data.next_1_hours?.summary.symbol_code || 'unknown'));
-        const icons = await Promise.all(iconPromises);
+        const icons = forecasts.map(f => getWeatherIcon(f.data.next_1_hours?.summary.symbol_code || 'unknown'));
 
-        forecastDiv.innerHTML = '<ul style="list-style: none; padding: 0;">' + forecasts.map((f, index) => {
+        forecastDiv.innerHTML = '<div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">' + forecasts.map((f, index) => {
             const temp = f.data.instant.details.air_temperature;
             const precip = f.data.next_1_hours?.details.precipitation_amount || 0;
-            const day = f.date.toLocaleDateString(locale, { weekday: 'long', month: 'short', day: 'numeric' });
-            return `<li style="display: flex; align-items: center; margin-bottom: 10px;"><span style="font-size: 48px; margin-right: 10px;">${icons[index]}</span> <strong>${day}:</strong> ${temp}°C, Nedbør: ${precip} mm</li>`;
-        }).join('') + '</ul>';
+            const day = f.date.toLocaleDateString(locale, { weekday: 'short', month: 'short', day: 'numeric' });
+            return `<div style="text-align: center; min-width: 100px;"><span style="font-size: 48px; display: block;">${icons[index]}</span><strong>${day}</strong><br>${temp}°C<br>Nedbør: ${precip} mm</div>`;
+        }).join('') + '</div>';
     } catch (error) {
         forecastDiv.innerHTML = 'Kunne ikke laste værvarsel. Prøv igjen senere.';
         console.error(error);
