@@ -30,10 +30,12 @@ const translations = {
         ],
         fireplaceTitle: "🔥 Peis",
         fireplaceIntro: "Peisen kan brukes til å varme opp hytta. Sørg for at det ikke er brannfare, og slukk alltid peisen før dere forlater stedet.",
-        fireplaceStart: "Når vi bruker peisen anbefaler vi at dere legger inn 3 stk vedkubber og setter spjeld til maks.",
-        fireplaceAdjust: "Når det er god fyr i ovnen kan dere justere ned til under middels med døren helt lukket.",
-        fireplaceDraught: "Det er veldig god trekk i denne ovnen.",
-        fireplaceStanding: "Dere kan sette vedkubber stående for beste mulig fyr.",
+        fireplaceSteps: [
+            "🪵 Legg inn 3 stk vedkubber og sett spjeld til maks for å starte.",
+            "🔥 Når det er god fyr, juster ned til under middels med døren helt lukket.",
+            "💨 Det er veldig god trekk i denne ovnen.",
+            "🪵 Sett vedkubber stående for beste mulig fyr."
+        ],
         saunaTitle: "🧖 Badstue",
         saunaText: "Badstuen er tilgjengelig for avslapning. Følg sikkerhetsinstruksjonene og ikke bruk den uten tilsyn.",
         departureTitle: "📋 Ved Avreise",
