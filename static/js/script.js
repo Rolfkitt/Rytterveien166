@@ -53,7 +53,7 @@ const translations = {
         cafeIntro: "Kafeen ligger rett ved siden av hytten, kun 200 meter gangavstand og er en fin spasertur fra hytta. Her kan dere nyte en god kopp kaffe eller noe å spise.",
         weatherToc: "🌤️ Værmelding",
         weatherTitle: "🌤️ Værmelding",
-        weatherIntro: "Her er værvarslet for Gautefall skisenter de neste 7 dagene, hentet fra Yr.no."
+        weatherIntro: "Her er værvarslet for Gautefall skisenter de neste 7 dagene, hentet fra Yr.no. (Rev 1)"
     },
     da: {
         title: "Velkommen til Rytterveien 166",
@@ -231,6 +231,7 @@ const translations = {
 
 function updateContent(lang = 'no') {
     const trans = translations[lang];
+    const locale = lang === 'no' ? 'no-NO' : lang === 'da' ? 'da-DK' : lang === 'de' ? 'de-DE' : 'en-US';
 
     document.querySelector('.hero h1').textContent = trans.title;
     document.getElementById('subtitle').textContent = trans.subtitle;
@@ -297,7 +298,7 @@ function updateContent(lang = 'no') {
     document.querySelector('#cafe h2').textContent = trans.cafeTitle;
     document.querySelector('#cafe-intro').textContent = trans.cafeIntro;
     document.querySelector('#weather h2').textContent = trans.weatherTitle;
-    document.querySelector('#weather-intro').textContent = trans.weatherIntro;
+    document.querySelector('#weather-intro').textContent = trans.weatherIntro + " (Oppdatert: " + new Date().toLocaleString(locale) + ")";
 }
 
 function getWeatherIcon(symbol) {
