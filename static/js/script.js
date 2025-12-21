@@ -22,10 +22,12 @@ const translations = {
             "Vannskifte: Sist utført 15. desember 2024",
             "Kvalitetssjekk (klorinnhold): Sist utført 20. desember 2024"
         ],
-        jacuzziTempAdvice: "Vi anbefaler at dere setter temperaturen til 38 grader 🌡️ ved ankomst. Dette gjør dere ved å trykke på displayet 📱 på jacuzzien til ønsket temperatur vises.",
-        jacuzziLidAdvice: "Viktig: Husk å sette lokket på jacuzzien når det ikke er i bruk for å spare energi! 🔋💚",
-        jacuzziShowerAdvice: "Før bruk ønsker vi at alle som skal bruke jacuzzien tar en kjapp dusj 🚿. Dette er for å sikre et hyggelig og rent miljø for alle. 🧼",
-        jacuzziChlorineAdvice: "Etter bruk skal det settes oppi 1 stk klor tablett 💊 for å holde vannet rent. 🧴",
+        jacuzziAdvice: [
+            "🌡️ Sett temperaturen til 38 grader ved ankomst ved å trykke på displayet 📱 på jacuzzien.",
+            "🔋💚 Husk å sette lokket på jacuzzien når det ikke er i bruk for å spare energi!",
+            "🚿 Før bruk tar alle som skal bruke jacuzzien en kjapp dusj for et hyggelig og rent miljø 🧼.",
+            "💊 Etter bruk settes 1 stk klor tablett oppi for å holde vannet rent 🧴."
+        ],
         fireplaceTitle: "🔥 Peis",
         fireplaceIntro: "Peisen kan brukes til å varme opp hytta. Sørg for at det ikke er brannfare, og slukk alltid peisen før dere forlater stedet.",
         fireplaceStart: "Når vi bruker peisen anbefaler vi at dere legger inn 3 stk vedkubber og setter spjeld til maks.",
@@ -74,21 +76,25 @@ const translations = {
         bedroomsTitle: "Soveværelser",
         bedroomsText: "Soveværelserne er ryddet op og gjort klar til jer. Alle senge er gjort med rent sengetøj.",
         jacuzziTitle: "🛁 Jacuzzi",
-        jacuzziIntro: "Vi tager godt vare på boblebadet for at sikre en hyggelig oplevelse for jer. Her er sidste vedligeholdelse:",
+        jacuzziIntro: "Vi tager godt vare på jacuzzien 🛁 for at sikre en hyggelig oplevelse for jer. Her er sidste vedligeholdelse: 🔧",
         jacuzziList: [
             "Vandskifte: Sidst udført 15. december 2024",
             "Kvalitetstjek (klorindhold): Sidst udført 20. december 2024"
         ],
-        jacuzziTempAdvice: "Vi anbefaler, at I sætter temperaturen til 38 grader ved ankomst. Dette gør I ved at trykke på displayet på boblebadet til ønsket temperatur vises.",
-        jacuzziLidAdvice: "Vigtigt: Husk at sætte låget på boblebadet, når det ikke er i brug for at spare energi! 🔋💚",
-        jacuzziShowerAdvice: "Før brug ønsker vi, at alle som skal bruge boblebadet tager et hurtigt bad. Dette er for at sikre et hyggeligt og rent miljø for alle.",
-        jacuzziChlorineAdvice: "Efter brug skal der sættes 1 stk klor tablet op i for at holde vandet rent.",
+        jacuzziAdvice: [
+            "🌡️ Sæt temperaturen til 38 grader ved ankomst ved at trykke på displayet 📱 på jacuzzien.",
+            "🔋💚 Husk at sætte låget på jacuzzien, når det ikke er i brug for at spare energi!",
+            "🚿 Før brug tager alle som skal bruge jacuzzien et hurtigt bad for et hyggeligt og rent miljø 🧼.",
+            "💊 Efter brug sættes 1 stk klor tablet op i for at holde vandet rent 🧴."
+        ],
         fireplaceTitle: "🔥 Peis",
         fireplaceIntro: "Peisen kan brukes til å varme opp hytta. Sørg for at det ikke er brannfare, og slukk alltid peisen før dere forlater stedet.",
-        fireplaceStart: "Når vi bruker peisen anbefaler vi at dere legger inn 3 stk vedkubber og setter spjeld til maks.",
-        fireplaceAdjust: "Når det er god fyr i ovnen kan dere justere ned til under middels med døren helt lukket.",
-        fireplaceDraught: "Det er veldig god trekk i denne ovnen.",
-        fireplaceStanding: "Dere kan sette vedkubber stående for beste mulig fyr.",
+        fireplaceSteps: [
+            "🪵 Legg inn 3 stk vedkubber og sett spjeld til maks for å starte.",
+            "🔥 Når det er god fyr, juster ned til under middels med døren helt lukket.",
+            "💨 Det er veldig god trekk i denne ovnen.",
+            "🪵 Sett vedkubber stående for beste mulig fyr."
+        ],
         saunaTitle: "🧖 Badstue",
         saunaText: "Badstuen er tilgjengelig for avslapning. Følg sikkerhetsinstruksjonene og ikke bruk den uten tilsyn.",
         departureTitle: "📋 Ved Afrejse",
@@ -131,21 +137,25 @@ const translations = {
         bedroomsTitle: "Schlafzimmer",
         bedroomsText: "Die Schlafzimmer sind aufgeräumt und für Sie vorbereitet. Alle Betten sind mit frischer Bettwäsche bezogen.",
         jacuzziTitle: "🛁 Jacuzzi",
-        jacuzziIntro: "Wir kümmern uns gut um den Whirlpool, um Ihnen ein angenehmes Erlebnis zu garantieren. Hier ist die letzte Wartung:",
+        jacuzziIntro: "Wir kümmern uns gut um den Jacuzzi 🛁, um Ihnen ein angenehmes Erlebnis zu garantieren. Hier ist die letzte Wartung: 🔧",
         jacuzziList: [
             "Wasserwechsel: Zuletzt durchgeführt am 15. Dezember 2024",
             "Qualitätsprüfung (Chlorgehalt): Zuletzt durchgeführt am 20. Dezember 2024"
         ],
-        jacuzziTempAdvice: "Wir empfehlen, die Temperatur bei Ankunft auf 38 Grad einzustellen. Dies tun Sie, indem Sie auf das Display des Whirlpools drücken, bis die gewünschte Temperatur angezeigt wird.",
-        jacuzziLidAdvice: "Wichtig: Denken Sie daran, den Deckel auf den Whirlpool zu legen, wenn er nicht in Gebrauch ist, um Energie zu sparen! 🔋💚",
-        jacuzziShowerAdvice: "Vor der Nutzung möchten wir, dass alle, die den Whirlpool benutzen möchten, eine kurze Dusche nehmen. Dies dient dazu, eine angenehme und saubere Umgebung für alle zu gewährleisten.",
-        jacuzziChlorineAdvice: "Nach der Nutzung sollte 1 Chlor-Tablette hineingegeben werden, um das Wasser sauber zu halten.",
+        jacuzziAdvice: [
+            "🌡️ Stellen Sie die Temperatur bei Ankunft auf 38 Grad ein, indem Sie auf das Display 📱 des Jacuzzis drücken.",
+            "🔋💚 Denken Sie daran, den Deckel auf den Jacuzzi zu legen, wenn er nicht in Gebrauch ist, um Energie zu sparen!",
+            "🚿 Vor der Nutzung nehmen alle, die den Jacuzzi benutzen möchten, eine kurze Dusche für eine angenehme und saubere Umgebung 🧼.",
+            "💊 Nach der Nutzung 1 Chlor-Tablette hineingeben, um das Wasser sauber zu halten 🧴."
+        ],
         fireplaceTitle: "🔥 Kamin",
         fireplaceIntro: "Der Kamin kann verwendet werden, um die Hütte zu heizen. Stellen Sie sicher, dass keine Brandgefahr besteht, und löschen Sie den Kamin immer, bevor Sie den Ort verlassen.",
-        fireplaceStart: "Wenn wir den Kamin verwenden, empfehlen wir, 3 Holzscheite einzulegen und die Klappe auf Maximum zu stellen.",
-        fireplaceAdjust: "Wenn das Feuer im Ofen gut brennt, können Sie auf unter Mittel herunterdrehen, mit der Tür vollständig geschlossen.",
-        fireplaceDraught: "Es gibt einen sehr guten Zug in diesem Ofen.",
-        fireplaceStanding: "Sie können die Holzscheite stehend platzieren für das beste mögliche Feuer.",
+        fireplaceSteps: [
+            "🪵 Legen Sie 3 Holzscheite ein und stellen Sie die Klappe auf Maximum, um zu starten.",
+            "🔥 Wenn das Feuer gut brennt, drehen Sie auf unter Mittel herunter, mit der Tür vollständig geschlossen.",
+            "💨 Es gibt einen sehr guten Zug in diesem Ofen.",
+            "🪵 Platzieren Sie die Holzscheite stehend für das beste mögliche Feuer."
+        ],
         saunaTitle: "🧖 Sauna",
         saunaText: "Die Sauna steht zur Entspannung zur Verfügung. Befolgen Sie die Sicherheitsanweisungen und verwenden Sie sie nicht ohne Aufsicht.",
 
@@ -189,21 +199,25 @@ const translations = {
         bedroomsTitle: "Bedrooms",
         bedroomsText: "The bedrooms are tidied up and prepared for you. All beds are made with clean linens.",
         jacuzziTitle: "🛁 Jacuzzi",
-        jacuzziIntro: "We take good care of the jacuzzi to ensure a pleasant experience for you. Here is the latest maintenance:",
+        jacuzziIntro: "We take good care of the jacuzzi 🛁 to ensure a pleasant experience for you. Here is the latest maintenance: 🔧",
         jacuzziList: [
             "Water change: Last performed December 15, 2024",
             "Quality check (chlorine content): Last performed December 20, 2024"
         ],
-        jacuzziTempAdvice: "We recommend setting the temperature to 38 degrees upon arrival. You do this by pressing the display on the jacuzzi until the desired temperature is shown.",
-        jacuzziLidAdvice: "Important: Remember to put the lid on the jacuzzi when not in use to save energy! 🔋💚",
-        jacuzziShowerAdvice: "Before use, we ask that everyone who wants to use the jacuzzi takes a quick shower. This is to ensure a pleasant and clean environment for everyone.",
-        jacuzziChlorineAdvice: "After use, 1 chlorine tablet should be added to keep the water clean.",
+        jacuzziAdvice: [
+            "🌡️ Set the temperature to 38 degrees upon arrival by pressing the display 📱 on the jacuzzi.",
+            "🔋💚 Remember to put the lid on the jacuzzi when not in use to save energy!",
+            "🚿 Before use, everyone who wants to use the jacuzzi takes a quick shower for a pleasant and clean environment 🧼.",
+            "💊 After use, add 1 chlorine tablet to keep the water clean 🧴."
+        ],
         fireplaceTitle: "🔥 Fireplace",
         fireplaceIntro: "The fireplace can be used to heat the cabin. Ensure there is no fire hazard, and always extinguish the fireplace before leaving.",
-        fireplaceStart: "When using the fireplace, we recommend putting in 3 logs and setting the damper to maximum.",
-        fireplaceAdjust: "When there is a good fire in the stove, you can adjust down to below medium with the door completely closed.",
-        fireplaceDraught: "There is very good draught in this stove.",
-        fireplaceStanding: "You can place the logs standing for the best possible fire.",
+        fireplaceSteps: [
+            "🪵 Put in 3 logs and set the damper to maximum to start.",
+            "🔥 When there is a good fire, adjust down to below medium with the door completely closed.",
+            "💨 There is very good draught in this stove.",
+            "🪵 Place the logs standing for the best possible fire."
+        ],
         saunaTitle: "🧖 Sauna",
         saunaText: "The sauna is available for relaxation. Follow safety instructions and do not use it unsupervised.",
         departureTitle: "📋 Upon Departure",
@@ -259,16 +273,22 @@ function updateContent(lang = 'no') {
         li.textContent = item;
         jacuzziList.appendChild(li);
     });
-    document.querySelector('#jacuzzi-temp').textContent = trans.jacuzziTempAdvice;
-    document.querySelector('#jacuzzi-lid').textContent = trans.jacuzziLidAdvice;
-    document.querySelector('#jacuzzi-shower').textContent = trans.jacuzziShowerAdvice;
-    document.querySelector('#jacuzzi-chlorine').textContent = trans.jacuzziChlorineAdvice;
+    const jacuzziAdvice = document.querySelector('#jacuzzi-advice');
+    jacuzziAdvice.innerHTML = '';
+    trans.jacuzziAdvice.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = item;
+        jacuzziAdvice.appendChild(li);
+    });
     document.querySelector('#fireplace h2').textContent = trans.fireplaceTitle;
     document.querySelector('#fireplace-intro').textContent = trans.fireplaceIntro;
-    document.querySelector('#fireplace-start').textContent = trans.fireplaceStart;
-    document.querySelector('#fireplace-adjust').textContent = trans.fireplaceAdjust;
-    document.querySelector('#fireplace-draught').textContent = trans.fireplaceDraught;
-    document.querySelector('#fireplace-standing').textContent = trans.fireplaceStanding;
+    const fireplaceSteps = document.querySelector('#fireplace-steps');
+    fireplaceSteps.innerHTML = '';
+    trans.fireplaceSteps.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = item;
+        fireplaceSteps.appendChild(li);
+    });
     document.querySelector('#sauna h2').textContent = trans.saunaTitle;
     document.querySelector('#sauna p').textContent = trans.saunaText;
     document.querySelector('#departure h2').textContent = trans.departureTitle;
