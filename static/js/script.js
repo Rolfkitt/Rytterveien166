@@ -379,35 +379,36 @@ async function fetchWeather(lang = 'no') {
         const data = await response.json();
         const timeseries = data.properties.timeseries;
         
-        // Get next 7 days, one per day at noon
+        // Get next available days with weather data
         const now = new Date();
         const forecasts = [];
-        for (let i = 0; i < 7; i++) {
+        for (let i = 0; i < 10; i++) {  // Check up to 10 days
             const date = new Date(now);
             date.setDate(now.getDate() + i);
             const dateStr = date.toISOString().slice(0, 10); // YYYY-MM-DD
             const dayEntries = timeseries.filter(t => t.time.startsWith(dateStr));
             if (dayEntries.length > 0) {
-                // Calculate max/min temperature
-                const temps = dayEntries.map(e => e.data.instant.details.air_temperature);
-                const maxTemp = Math.max(...temps);
-                const minTemp = Math.min(...temps);
-                
-                // Sum precipitation
-                const precip = dayEntries.reduce((sum, e) => sum + (e.data.next_1_hours?.details.precipitation_amount || 0), 0);
-                
-                // Find symbol closest to 12:00 (noon)
                 const noonEntry = dayEntries.reduce((closest, current) => {
                     const currentHour = new Date(current.time).getHours();
                     const closestHour = new Date(closest.time).getHours();
                     return Math.abs(currentHour - 12) < Math.abs(closestHour - 12) ? current : closest;
                 });
-                const symbol = noonEntry.data.next_12_hours?.summary.symbol_code || noonEntry.data.next_6_hours?.summary.symbol_code || noonEntry.data.next_1_hours?.summary.symbol_code || noonEntry.data.instant.details.symbol_code || 'fair_day';
-                
-                forecasts.push({ date, maxTemp, minTemp, precip, symbol });
-            } else {
-                // Default if no data
-                forecasts.push({ date, maxTemp: 0, minTemp: 0, precip: 0, symbol: 'unknown' });
+                if (noonEntry.data.next_1_hours) {
+                    // Calculate max/min temperature
+                    const temps = dayEntries.map(e => e.data.instant.details.air_temperature);
+                    const maxTemp = Math.max(...temps);
+                    const minTemp = Math.min(...temps);
+                    
+                    // Sum precipitation
+                    const precip = dayEntries.reduce((sum, e) => sum + (e.data.next_1_hours?.details.precipitation_amount || 0), 0);
+                    
+                    const symbol = noonEntry.data.next_1_hours.summary.symbol_code;
+                    
+                    forecasts.push({ date, maxTemp, minTemp, precip, symbol });
+                } else {
+                    // Stop if no next_1_hours data
+                    break;
+                }
             }
         }
         
