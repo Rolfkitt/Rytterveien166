@@ -297,9 +297,11 @@ function updateContent(lang = 'no') {
     document.querySelector('#weather-intro').textContent = trans.weatherIntro;
 }
 
-async function fetchWeather() {
+async function fetchWeather(lang = 'no') {
     const forecastDiv = document.getElementById('weather-forecast');
-    forecastDiv.innerHTML = 'Laster værvarsel...';
+    const loadingText = lang === 'no' ? 'Laster værvarsel...' : lang === 'da' ? 'Indlæser vejrudsigt...' : lang === 'de' ? 'Lade Wettervorhersage...' : 'Loading weather forecast...';
+    forecastDiv.innerHTML = loadingText;
+    const locale = lang === 'no' ? 'no-NO' : lang === 'da' ? 'da-DK' : lang === 'de' ? 'de-DE' : 'en-US';
     try {
         const response = await fetch('https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=58.8167&lon=7.7833', {
             headers: {
@@ -322,12 +324,12 @@ async function fetchWeather() {
             if (entry) forecasts.push({ date, data: entry.data });
         }
         
-        forecastDiv.innerHTML = '<ul>' + forecasts.map(f => {
+        forecastDiv.innerHTML = '<ul style="list-style: none; padding: 0;">' + forecasts.map(f => {
             const temp = f.data.instant.details.air_temperature;
             const symbol = f.data.next_1_hours?.summary.symbol_code || 'unknown';
             const precip = f.data.next_1_hours?.details.precipitation_amount || 0;
-            const day = f.date.toLocaleDateString('no-NO', { weekday: 'long', month: 'short', day: 'numeric' });
-            return `<li>${day}: ${temp}°C, ${symbol.replace('_', ' ')}, Nedbør: ${precip} mm</li>`;
+            const day = f.date.toLocaleDateString(locale, { weekday: 'long', month: 'short', day: 'numeric' });
+            return `<li style="display: flex; align-items: center; margin-bottom: 10px;"><img src="https://api.met.no/weatherapi/weathericon/2.0/?symbol=${symbol}&content_type=image/svg+xml" alt="${symbol}" style="width: 48px; height: 48px; margin-right: 10px;"> <strong>${day}:</strong> ${temp}°C, Nedbør: ${precip} mm</li>`;
         }).join('') + '</ul>';
     } catch (error) {
         forecastDiv.innerHTML = 'Kunne ikke laste værvarsel. Prøv igjen senere.';
@@ -338,6 +340,7 @@ async function fetchWeather() {
 document.getElementById('language').addEventListener('change', function() {
     const lang = this.value;
     updateContent(lang);
+    fetchWeather(lang);
 });
 
 // Initial load
