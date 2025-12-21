@@ -332,7 +332,7 @@ async function fetchWeather(lang = 'no') {
             const symbol = f.data.next_1_hours?.summary.symbol_code || 'unknown';
             const precip = f.data.next_1_hours?.details.precipitation_amount || 0;
             const day = f.date.toLocaleDateString(locale, { weekday: 'long', month: 'short', day: 'numeric' });
-            return `<li style="display: flex; align-items: center; margin-bottom: 10px;"><img src="https://api.met.no/weatherapi/weathericon/2.0/?symbol=${symbol}&content_type=image/svg+xml" alt="${symbol}" style="width: 48px; height: 48px; margin-right: 10px;"> <strong>${day}:</strong> ${temp}°C, Nedbør: ${precip} mm</li>`;
+            return `<li style="display: flex; align-items: center; margin-bottom: 10px;"><img src="https://api.met.no/weatherapi/weathericon/2.0/?symbol=${symbol}&content_type=image/png&size=large" alt="${symbol}" style="width: 64px; height: 64px; margin-right: 10px;"> <strong>${day}:</strong> ${temp}°C, Nedbør: ${precip} mm</li>`;
         }).join('') + '</ul>';
     } catch (error) {
         forecastDiv.innerHTML = 'Kunne ikke laste værvarsel. Prøv igjen senere.';
