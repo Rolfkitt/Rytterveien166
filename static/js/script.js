@@ -10,6 +10,7 @@ const translations = {
         saunaToc: "🧖 Badstue",
         wasteToc: "♻️ Søppelsortering",
         skiToc: "🎿 Skibakken",
+        cafeToc: "☕ Kafe",
         departureToc: "📋 Ved Avreise",
         waterTitle: "💧 Vannforsyning",
         waterText: "Vannkranen må åpnes når dere ankommer og lukkes når dere forlater hytta. Dette sikrer at rørene ikke fryser om vinteren.",
@@ -46,7 +47,9 @@ const translations = {
         wasteText: "Vi ber om at dere sorterer søppelet som følger: Bilder av søppelstasjonen vil bli lagt til her.",
         skiTitle: "🎿 Skibakken",
         skiIntro: "Nyt en dag med ski i Gautefall skibakken. Her er løypekartet og informasjon om heiskortpriser.",
-        skiPrices: "For priser på heiskort, se den vedlagte PDF-en."
+        skiPrices: "For priser på heiskort, se den vedlagte PDF-en.",
+        cafeTitle: "☕ Kafe",
+        cafeIntro: "Kafeen ligger rett ved siden av hytten, kun 200 meter gangavstand. Her kan dere nyte en god kopp kaffe eller noe å spise."
     },
     da: {
         title: "Velkommen til Rytterveien 166",
@@ -59,6 +62,7 @@ const translations = {
         saunaToc: "🧖 Badstue",
         wasteToc: "Affaldssortering",
         skiToc: "🎿 Skibakken",
+        cafeToc: "☕ Kafe",
         departureToc: "📋 Ved Afrejse",
         waterTitle: "Vandforsyning",
         waterText: "Vandhanen skal åbnes når I ankommer og lukkes når I forlader hytten. Dette sikrer at rørene ikke fryser om vinteren.",
@@ -95,7 +99,9 @@ const translations = {
         wasteText: "Vi beder jer om at sortere affaldet som følger: Billeder af affaldsstationen vil blive tilføjet her.",
         skiTitle: "🎿 Skibakken",
         skiIntro: "Nyd en dag med ski i Gautefall skibakken. Her er løypekortet og information om heiskortpriser.",
-        skiPrices: "For priser på heiskort, se den vedlagte PDF'en."
+        skiPrices: "For priser på heiskort, se den vedlagte PDF'en.",
+        cafeTitle: "☕ Kafe",
+        cafeIntro: "Kafeen ligger lige ved siden af hytten, kun 200 meter gangafstand. Her kan I nyde en god kop kaffe eller noget at spise."
     },
     de: {
         title: "Willkommen in der Rytterveien 166",
@@ -108,6 +114,7 @@ const translations = {
         saunaToc: "🧖 Sauna",
         wasteToc: "Abfallsortierung",
         skiToc: "🎿 Skibakken",
+        cafeToc: "☕ Kafe",
         departureToc: "📋 Bei Abreise",
         waterTitle: "Wasserversorgung",
         waterText: "Der Wasserhahn muss beim Ankommen geöffnet und beim Verlassen der Hütte geschlossen werden. Dies stellt sicher, dass die Rohre im Winter nicht einfrieren.",
@@ -145,7 +152,9 @@ const translations = {
         wasteText: "Wir bitten Sie, den Abfall wie folgt zu sortieren: Bilder der Abfallstation werden hier hinzugefügt.",
         skiTitle: "🎿 Skibakken",
         skiIntro: "Genießen Sie einen Tag mit Skifahren in der Gautefall Skibakken. Hier ist die Pistenkarte und Informationen zu Liftkartenpreisen.",
-        skiPrices: "Für Preise von Liftkarten, siehe die beigefügte PDF."
+        skiPrices: "Für Preise von Liftkarten, siehe die beigefügte PDF.",
+        cafeTitle: "☕ Kafe",
+        cafeIntro: "Das Café liegt direkt neben der Hütte, nur 200 Meter zu Fuß. Hier können Sie einen guten Kaffee oder etwas zu essen genießen."
     },
     en: {
         title: "Welcome to Rytterveien 166",
@@ -158,6 +167,7 @@ const translations = {
         saunaToc: "🧖 Sauna",
         wasteToc: "Waste Sorting",
         skiToc: "🎿 Ski Slope",
+        cafeToc: "☕ Cafe",
         departureToc: "📋 Upon Departure",
         waterTitle: "Water Supply",
         waterText: "The water tap must be opened upon arrival and closed when leaving the cabin. This ensures that the pipes do not freeze in winter.",
@@ -194,7 +204,9 @@ const translations = {
         wasteText: "We ask that you sort the waste as follows: Pictures of the waste station will be added here.",
         skiTitle: "🎿 Ski Slope",
         skiIntro: "Enjoy a day of skiing at Gautefall ski slope. Here is the trail map and information on lift ticket prices.",
-        skiPrices: "For lift ticket prices, see the attached PDF."
+        skiPrices: "For lift ticket prices, see the attached PDF.",
+        cafeTitle: "☕ Cafe",
+        cafeIntro: "The cafe is located right next to the cabin, only 200 meters walking distance. Here you can enjoy a good cup of coffee or something to eat."
     }
 };
 
@@ -211,6 +223,7 @@ function updateContent(lang = 'no') {
     document.querySelector('#toc a[href="#sauna"]').textContent = trans.saunaToc;
     document.querySelector('#toc a[href="#waste"]').textContent = trans.wasteToc;
     document.querySelector('#toc a[href="#ski"]').textContent = trans.skiToc;
+    document.querySelector('#toc a[href="#cafe"]').textContent = trans.cafeToc;
     document.querySelector('#toc a[href="#departure"]').textContent = trans.departureToc;
     document.querySelector('#water h2').textContent = trans.waterTitle;
     document.querySelector('#water p').textContent = trans.waterText;
@@ -253,6 +266,8 @@ function updateContent(lang = 'no') {
     document.querySelector('#ski h2').textContent = trans.skiTitle;
     document.querySelector('#ski-intro').textContent = trans.skiIntro;
     document.querySelector('#ski-prices').textContent = trans.skiPrices;
+    document.querySelector('#cafe h2').textContent = trans.cafeTitle;
+    document.querySelector('#cafe-intro').textContent = trans.cafeIntro;
 }
 
 document.getElementById('language').addEventListener('change', function() {
