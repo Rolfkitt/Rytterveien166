@@ -361,28 +361,36 @@ async function fetchWeather(lang = 'no') {
             date.setDate(now.getDate() + i);
             const dateStr = date.toISOString().slice(0, 10); // YYYY-MM-DD
             const dayEntries = timeseries.filter(t => t.time.startsWith(dateStr));
-            let entry = null;
             if (dayEntries.length > 0) {
-                // Find entry closest to 12:00
-                entry = dayEntries.reduce((closest, current) => {
+                // Calculate max/min temperature
+                const temps = dayEntries.map(e => e.data.instant.details.air_temperature);
+                const maxTemp = Math.max(...temps);
+                const minTemp = Math.min(...temps);
+                
+                // Sum precipitation
+                const precip = dayEntries.reduce((sum, e) => sum + (e.data.next_1_hours?.details.precipitation_amount || 0), 0);
+                
+                // Find symbol closest to 15:00 (afternoon)
+                const afternoonEntry = dayEntries.reduce((closest, current) => {
                     const currentHour = new Date(current.time).getHours();
                     const closestHour = new Date(closest.time).getHours();
-                    return Math.abs(currentHour - 12) < Math.abs(closestHour - 12) ? current : closest;
+                    return Math.abs(currentHour - 15) < Math.abs(closestHour - 15) ? current : closest;
                 });
+                const symbol = afternoonEntry.data.next_1_hours?.summary.symbol_code || 'unknown';
+                
+                forecasts.push({ date, maxTemp, minTemp, precip, symbol });
+            } else {
+                // Default if no data
+                forecasts.push({ date, maxTemp: 0, minTemp: 0, precip: 0, symbol: 'unknown' });
             }
-            if (!entry) {
-                entry = { data: { instant: { details: { air_temperature: 0 } }, next_1_hours: { summary: { symbol_code: 'unknown' }, details: { precipitation_amount: 0 } } } };
-            }
-            forecasts.push({ date, data: entry.data });
         }
         
         const icons = forecasts.map(f => getWeatherIcon(f.data.next_1_hours?.summary.symbol_code || 'unknown'));
 
         forecastDiv.innerHTML = '<div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">' + forecasts.map((f, index) => {
-            const temp = f.data.instant.details.air_temperature;
-            const precip = f.data.next_1_hours?.details.precipitation_amount || 0;
+            const icon = getWeatherIcon(f.symbol);
             const day = f.date.toLocaleDateString(locale, { weekday: 'short', month: 'short', day: 'numeric' });
-            return `<div style="text-align: center; min-width: 100px;"><span style="font-size: 48px; display: block;">${icons[index]}</span><strong>${day}</strong><br>${temp}°C<br>Nedbør: ${precip} mm</div>`;
+            return `<div style="text-align: center; min-width: 100px;"><span style="font-size: 48px; display: block;">${icon}</span><strong>${day}</strong><br>Maks: ${f.maxTemp}°C<br>Min: ${f.minTemp}°C<br>Nedbør: ${f.precip.toFixed(1)} mm</div>`;
         }).join('') + '</div>';
     } catch (error) {
         forecastDiv.innerHTML = 'Kunne ikke laste værvarsel. Prøv igjen senere.';
