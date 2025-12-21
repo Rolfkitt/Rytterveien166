@@ -9,6 +9,7 @@ const translations = {
         fireplaceToc: "🔥 Peis",
         saunaToc: "🧖 Badstue",
         wasteToc: "♻️ Søppelsortering",
+        skiToc: "🎿 Skibakken",
         departureToc: "📋 Ved Avreise",
         waterTitle: "💧 Vannforsyning",
         waterText: "Vannkranen må åpnes når dere ankommer og lukkes når dere forlater hytta. Dette sikrer at rørene ikke fryser om vinteren.",
@@ -42,7 +43,10 @@ const translations = {
             "Sjekk at alle vinduer og dører er lukket."
         ],
         wasteTitle: "♻️ Søppelsortering",
-        wasteText: "Vi ber om at dere sorterer søppelet som følger: Bilder av søppelstasjonen vil bli lagt til her."
+        wasteText: "Vi ber om at dere sorterer søppelet som følger: Bilder av søppelstasjonen vil bli lagt til her.",
+        skiTitle: "🎿 Skibakken",
+        skiIntro: "Nyt en dag med ski i Gautefall skibakken. Her er løypekartet og informasjon om heiskortpriser.",
+        skiPrices: "For priser på heiskort, se den vedlagte PDF-en."
     },
     da: {
         title: "Velkommen til Rytterveien 166",
@@ -54,6 +58,7 @@ const translations = {
         fireplaceToc: "🔥 Peis",
         saunaToc: "🧖 Badstue",
         wasteToc: "Affaldssortering",
+        skiToc: "🎿 Skibakken",
         departureToc: "📋 Ved Afrejse",
         waterTitle: "Vandforsyning",
         waterText: "Vandhanen skal åbnes når I ankommer og lukkes når I forlader hytten. Dette sikrer at rørene ikke fryser om vinteren.",
@@ -87,7 +92,10 @@ const translations = {
             "Tjek at alle vinduer og døre er lukket."
         ],
         wasteTitle: "♻️ Affaldssortering",
-        wasteText: "Vi beder jer om at sortere affaldet som følger: Billeder af affaldsstationen vil blive tilføjet her."
+        wasteText: "Vi beder jer om at sortere affaldet som følger: Billeder af affaldsstationen vil blive tilføjet her.",
+        skiTitle: "🎿 Skibakken",
+        skiIntro: "Nyd en dag med ski i Gautefall skibakken. Her er løypekortet og information om heiskortpriser.",
+        skiPrices: "For priser på heiskort, se den vedlagte PDF'en."
     },
     de: {
         title: "Willkommen in der Rytterveien 166",
@@ -99,6 +107,7 @@ const translations = {
         fireplaceToc: "🔥 Kamin",
         saunaToc: "🧖 Sauna",
         wasteToc: "Abfallsortierung",
+        skiToc: "🎿 Skibakken",
         departureToc: "📋 Bei Abreise",
         waterTitle: "Wasserversorgung",
         waterText: "Der Wasserhahn muss beim Ankommen geöffnet und beim Verlassen der Hütte geschlossen werden. Dies stellt sicher, dass die Rohre im Winter nicht einfrieren.",
@@ -133,7 +142,10 @@ const translations = {
             "Überprüfen Sie, dass alle Fenster und Türen geschlossen sind."
         ],
         wasteTitle: "♻️ Abfallsortierung",
-        wasteText: "Wir bitten Sie, den Abfall wie folgt zu sortieren: Bilder der Abfallstation werden hier hinzugefügt."
+        wasteText: "Wir bitten Sie, den Abfall wie folgt zu sortieren: Bilder der Abfallstation werden hier hinzugefügt.",
+        skiTitle: "🎿 Skibakken",
+        skiIntro: "Genießen Sie einen Tag mit Skifahren in der Gautefall Skibakken. Hier ist die Pistenkarte und Informationen zu Liftkartenpreisen.",
+        skiPrices: "Für Preise von Liftkarten, siehe die beigefügte PDF."
     },
     en: {
         title: "Welcome to Rytterveien 166",
@@ -145,6 +157,7 @@ const translations = {
         fireplaceToc: "🔥 Fireplace",
         saunaToc: "🧖 Sauna",
         wasteToc: "Waste Sorting",
+        skiToc: "🎿 Ski Slope",
         departureToc: "📋 Upon Departure",
         waterTitle: "Water Supply",
         waterText: "The water tap must be opened upon arrival and closed when leaving the cabin. This ensures that the pipes do not freeze in winter.",
@@ -178,7 +191,10 @@ const translations = {
             "Check that all windows and doors are closed."
         ],
         wasteTitle: "♻️ Waste Sorting",
-        wasteText: "We ask that you sort the waste as follows: Pictures of the waste station will be added here."
+        wasteText: "We ask that you sort the waste as follows: Pictures of the waste station will be added here.",
+        skiTitle: "🎿 Ski Slope",
+        skiIntro: "Enjoy a day of skiing at Gautefall ski slope. Here is the trail map and information on lift ticket prices.",
+        skiPrices: "For lift ticket prices, see the attached PDF."
     }
 };
 
@@ -194,6 +210,7 @@ function updateContent(lang = 'no') {
     document.querySelector('#toc a[href="#fireplace"]').textContent = trans.fireplaceToc;
     document.querySelector('#toc a[href="#sauna"]').textContent = trans.saunaToc;
     document.querySelector('#toc a[href="#waste"]').textContent = trans.wasteToc;
+    document.querySelector('#toc a[href="#ski"]').textContent = trans.skiToc;
     document.querySelector('#toc a[href="#departure"]').textContent = trans.departureToc;
     document.querySelector('#water h2').textContent = trans.waterTitle;
     document.querySelector('#water p').textContent = trans.waterText;
@@ -233,6 +250,9 @@ function updateContent(lang = 'no') {
     outroP.textContent = trans.departureOutro;
     document.querySelector('#waste h2').textContent = trans.wasteTitle;
     document.querySelector('#waste p').textContent = trans.wasteText;
+    document.querySelector('#ski h2').textContent = trans.skiTitle;
+    document.querySelector('#ski-intro').textContent = trans.skiIntro;
+    document.querySelector('#ski-prices').textContent = trans.skiPrices;
 }
 
 document.getElementById('language').addEventListener('change', function() {
