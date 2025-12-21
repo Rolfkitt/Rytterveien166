@@ -270,7 +270,14 @@ function updateContent(lang = 'no') {
     document.querySelector('#ski h2').textContent = trans.skiTitle;
     document.querySelector('#ski-intro').textContent = trans.skiIntro;
     document.querySelector('#ski-prices').textContent = trans.skiPrices;
-    document.querySelector('#ski-prices-list').textContent = trans.skiPricesList;
+    const skiPricesList = document.querySelector('#ski-prices-list');
+    skiPricesList.innerHTML = '';
+    const prices = trans.skiPricesList.split('\n');
+    prices.forEach(price => {
+        const li = document.createElement('li');
+        li.textContent = price;
+        skiPricesList.appendChild(li);
+    });
     document.querySelector('#cafe h2').textContent = trans.cafeTitle;
     document.querySelector('#cafe-intro').textContent = trans.cafeIntro;
 }
