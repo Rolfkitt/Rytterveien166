@@ -53,7 +53,7 @@ const translations = {
         cafeIntro: "Kafeen ligger rett ved siden av hytten, kun 200 meter gangavstand og er en fin spasertur fra hytta. Her kan dere nyte en god kopp kaffe eller noe å spise.",
         weatherToc: "🌤️ Værmelding",
         weatherTitle: "🌤️ Værmelding",
-        weatherIntro: "Her er værvarslet for Gautefall skisenter de neste 7 dagene, hentet fra Yr.no. (Rev 1)"
+        weatherIntro: "Her er værvarslet for Gautefall skisenter de neste 7 dagene, hentet fra Yr.no. (Rev 2)"
     },
     da: {
         title: "Velkommen til Rytterveien 166",
@@ -110,7 +110,7 @@ const translations = {
         cafeIntro: "Kafeen ligger lige ved siden af hytten, kun 200 meter gangafstand og er en fin spadseretur fra hytten. Her kan I nyde en god kop kaffe eller noget at spise.",
         weatherToc: "🌤️ Vejrudsigt",
         weatherTitle: "🌤️ Vejrudsigt",
-        weatherIntro: "Her er vejrudsigten for Gautefall skisenter de næste 7 dage, hentet fra Yr.no."
+        weatherIntro: "Her er vejrudsigten for Gautefall skisenter de næste 7 dage, hentet fra Yr.no. (Rev 2)"
     },
     de: {
         title: "Willkommen in der Rytterveien 166",
@@ -168,7 +168,7 @@ const translations = {
         cafeIntro: "Das Café liegt direkt neben der Hütte, nur 200 Meter zu Fuß und ist ein schöner Spaziergang von der Hütte. Hier können Sie einen guten Kaffee oder etwas zu essen genießen.",
         weatherToc: "🌤️ Wettervorhersage",
         weatherTitle: "🌤️ Wettervorhersage",
-        weatherIntro: "Hier ist die Wettervorhersage für das Gautefall Skizentrum für die nächsten 7 Tage, abgerufen von Yr.no."
+        weatherIntro: "Hier ist die Wettervorhersage für das Gautefall Skizentrum für die nächsten 7 Tage, abgerufen von Yr.no. (Rev 2)"
     },
     en: {
         title: "Welcome to Rytterveien 166",
@@ -225,7 +225,7 @@ const translations = {
         cafeIntro: "The cafe is located right next to the cabin, only 200 meters walking distance and is a nice walk from the cabin. Here you can enjoy a good cup of coffee or something to eat.",
         weatherToc: "🌤️ Weather Forecast",
         weatherTitle: "🌤️ Weather Forecast",
-        weatherIntro: "Here is the weather forecast for Gautefall ski center for the next 7 days, retrieved from Yr.no."
+        weatherIntro: "Here is the weather forecast for Gautefall ski center for the next 7 days, retrieved from Yr.no. (Rev 2)"
     }
 };
 
