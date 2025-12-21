@@ -342,9 +342,17 @@ async function fetchWeather(lang = 'no') {
         for (let i = 0; i < 7; i++) {
             const date = new Date(now);
             date.setDate(now.getDate() + i);
-            date.setHours(12, 0, 0, 0);
-            const iso = date.toISOString();
-            let entry = timeseries.find(t => t.time.startsWith(iso.slice(0, 13))); // match hour
+            const dateStr = date.toISOString().slice(0, 10); // YYYY-MM-DD
+            const dayEntries = timeseries.filter(t => t.time.startsWith(dateStr));
+            let entry = null;
+            if (dayEntries.length > 0) {
+                // Find entry closest to 12:00
+                entry = dayEntries.reduce((closest, current) => {
+                    const currentHour = new Date(current.time).getHours();
+                    const closestHour = new Date(closest.time).getHours();
+                    return Math.abs(currentHour - 12) < Math.abs(closestHour - 12) ? current : closest;
+                });
+            }
             if (!entry) {
                 entry = { data: { instant: { details: { air_temperature: 0 } }, next_1_hours: { summary: { symbol_code: 'unknown' }, details: { precipitation_amount: 0 } } } };
             }
