@@ -300,6 +300,26 @@ function updateContent(lang = 'no') {
     document.querySelector('#weather-intro').textContent = trans.weatherIntro;
 }
 
+async function getWeatherIcon(symbol) {
+    try {
+        const response = await fetch(`https://api.met.no/weatherapi/weathericon/2.0/?symbol=${symbol}&content_type=image/png&size=large`, {
+            headers: {
+                'User-Agent': 'Rytterveien166-Guide/1.0 (rolf.kittelsen@imstec.no)'
+            }
+        });
+        if (!response.ok) throw new Error('Icon fetch failed');
+        const blob = await response.blob();
+        return new Promise((resolve) => {
+            const reader = new FileReader();
+            reader.onload = () => resolve(reader.result);
+            reader.readAsDataURL(blob);
+        });
+    } catch (error) {
+        console.error('Failed to load icon for', symbol, error);
+        return 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg=='; // transparent 1x1
+    }
+}
+
 async function fetchWeather(lang = 'no') {
     const forecastDiv = document.getElementById('weather-forecast');
     const loadingText = lang === 'no' ? 'Laster værvarsel...' : lang === 'da' ? 'Indlæser vejrudsigt...' : lang === 'de' ? 'Lade Wettervorhersage...' : 'Loading weather forecast...';
@@ -327,12 +347,14 @@ async function fetchWeather(lang = 'no') {
             if (entry) forecasts.push({ date, data: entry.data });
         }
         
-        forecastDiv.innerHTML = '<ul style="list-style: none; padding: 0;">' + forecasts.map(f => {
+        const iconPromises = forecasts.map(f => getWeatherIcon(f.data.next_1_hours?.summary.symbol_code || 'unknown'));
+        const icons = await Promise.all(iconPromises);
+
+        forecastDiv.innerHTML = '<ul style="list-style: none; padding: 0;">' + forecasts.map((f, index) => {
             const temp = f.data.instant.details.air_temperature;
-            const symbol = f.data.next_1_hours?.summary.symbol_code || 'unknown';
             const precip = f.data.next_1_hours?.details.precipitation_amount || 0;
             const day = f.date.toLocaleDateString(locale, { weekday: 'long', month: 'short', day: 'numeric' });
-            return `<li style="display: flex; align-items: center; margin-bottom: 10px;"><img src="https://api.met.no/weatherapi/weathericon/2.0/?symbol=${symbol}&content_type=image/png&size=large" alt="${symbol}" style="width: 64px; height: 64px; margin-right: 10px;"> <strong>${day}:</strong> ${temp}°C, Nedbør: ${precip} mm</li>`;
+            return `<li style="display: flex; align-items: center; margin-bottom: 10px;"><img src="${icons[index]}" style="width: 64px; height: 64px; margin-right: 10px;"> <strong>${day}:</strong> ${temp}°C, Nedbør: ${precip} mm</li>`;
         }).join('') + '</ul>';
     } catch (error) {
         forecastDiv.innerHTML = 'Kunne ikke laste værvarsel. Prøv igjen senere.';
