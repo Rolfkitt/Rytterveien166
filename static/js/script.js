@@ -403,7 +403,7 @@ async function fetchWeather(lang = 'no') {
                     return Math.abs(currentHour - 12) < Math.abs(closestHour - 12) ? current : closest;
                 });
                 const symbol = noonEntry.data.next_1_hours?.summary.symbol_code || noonEntry.data.instant.details.symbol_code || 'unknown';
-                console.log('Symbol for', date.toISOString().slice(0, 10), ':', symbol);
+                console.log('Symbol for', date.toISOString().slice(0, 10), ':', symbol, 'next_1_hours:', !!noonEntry.data.next_1_hours, 'instant symbol:', noonEntry.data.instant.details.symbol_code);
                 
                 forecasts.push({ date, maxTemp, minTemp, precip, symbol });
             } else {
