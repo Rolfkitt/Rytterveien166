@@ -50,7 +50,7 @@ const translations = {
         skiPrices: "For priser på heiskort, se nedenfor:",
         skiPricesList: "Voksen (dag): 500 NOK\nBarn (dag): 300 NOK\nSesongkort: 5000 NOK",
         cafeTitle: "☕ Kafe",
-        cafeIntro: "Kafeen ligger rett ved siden av hytten, kun 200 meter gangavstand. Her kan dere nyte en god kopp kaffe eller noe å spise."
+        cafeIntro: "Kafeen ligger rett ved siden av hytten, kun 200 meter gangavstand og er en fin spasertur fra hytta. Her kan dere nyte en god kopp kaffe eller noe å spise."
     },
     da: {
         title: "Velkommen til Rytterveien 166",
@@ -103,7 +103,7 @@ const translations = {
         skiPrices: "For priser på heiskort, se nedenfor:",
         skiPricesList: "Voksen (dag): 500 DKK\nBarn (dag): 300 DKK\nSesongkort: 5000 DKK",
         cafeTitle: "☕ Kafe",
-        cafeIntro: "Kafeen ligger lige ved siden af hytten, kun 200 meter gangafstand. Her kan I nyde en god kop kaffe eller noget at spise."
+        cafeIntro: "Kafeen ligger lige ved siden af hytten, kun 200 meter gangafstand og er en fin spadseretur fra hytten. Her kan I nyde en god kop kaffe eller noget at spise."
     },
     de: {
         title: "Willkommen in der Rytterveien 166",
@@ -157,7 +157,7 @@ const translations = {
         skiPrices: "Für Preise von Liftkarten, siehe unten:",
         skiPricesList: "Erwachsener (Tag): 50 EUR\nKind (Tag): 30 EUR\nSaisonkarte: 500 EUR",
         cafeTitle: "☕ Kafe",
-        cafeIntro: "Das Café liegt direkt neben der Hütte, nur 200 Meter zu Fuß. Hier können Sie einen guten Kaffee oder etwas zu essen genießen."
+        cafeIntro: "Das Café liegt direkt neben der Hütte, nur 200 Meter zu Fuß und ist ein schöner Spaziergang von der Hütte. Hier können Sie einen guten Kaffee oder etwas zu essen genießen."
     },
     en: {
         title: "Welcome to Rytterveien 166",
@@ -210,7 +210,7 @@ const translations = {
         skiPrices: "For lift ticket prices, see below:",
         skiPricesList: "Adult (day): 50 USD\nChild (day): 30 USD\nSeason pass: 500 USD",
         cafeTitle: "☕ Cafe",
-        cafeIntro: "The cafe is located right next to the cabin, only 200 meters walking distance. Here you can enjoy a good cup of coffee or something to eat."
+        cafeIntro: "The cafe is located right next to the cabin, only 200 meters walking distance and is a nice walk from the cabin. Here you can enjoy a good cup of coffee or something to eat."
     }
 };
 
