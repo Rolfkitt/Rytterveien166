@@ -344,7 +344,7 @@ async function fetchWeather(lang = 'no') {
     forecastDiv.innerHTML = loadingText;
     const locale = lang === 'no' ? 'no-NO' : lang === 'da' ? 'da-DK' : lang === 'de' ? 'de-DE' : 'en-US';
     try {
-        const response = await fetch('https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=59.097713&lon=9.058709', {
+        const response = await fetch('https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=59.059041&lon=8.737141', {
             headers: {
                 'User-Agent': 'Rytterveien166-Guide/1.0 (rolf.kittelsen@imstec.no)'
             }
