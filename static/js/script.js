@@ -334,7 +334,7 @@ function getWeatherIcon(symbol) {
         'snowshowersandthunder': '⛈️',
         'unknown': '❓'
     };
-    return iconMap[symbol] || '❓';
+    return iconMap[symbol] || symbol;
 }
 
 async function fetchWeather(lang = 'no') {
