@@ -300,7 +300,7 @@ function updateContent(lang = 'no') {
     document.querySelector('#weather-intro').textContent = trans.weatherIntro;
 }
 
-async function getWeatherIcon(symbol) {
+function getWeatherIcon(symbol) {
     const iconMap = {
         'clearsky_day': '☀️',
         'clearsky_night': '🌙',
