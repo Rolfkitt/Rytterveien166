@@ -130,8 +130,7 @@ const translations = {
     }
 };
 
-document.getElementById('language').addEventListener('change', function() {
-    const lang = this.value;
+function updateContent(lang = 'no') {
     const trans = translations[lang];
 
     document.querySelector('.hero h1').textContent = trans.title;
@@ -142,10 +141,6 @@ document.getElementById('language').addEventListener('change', function() {
     document.querySelector('#bedrooms h2').textContent = trans.bedroomsTitle;
     document.querySelector('#bedrooms p').textContent = trans.bedroomsText;
     document.querySelector('#jacuzzi h2').textContent = trans.jacuzziTitle;
-    document.querySelector('#fireplace h2').textContent = trans.fireplaceTitle;
-    document.querySelector('#fireplace p').textContent = trans.fireplaceText;
-    document.querySelector('#sauna h2').textContent = trans.saunaTitle;
-    document.querySelector('#sauna p').textContent = trans.saunaText;
     document.querySelector('#jacuzzi-intro').textContent = trans.jacuzziIntro;
     const jacuzziList = document.querySelector('#jacuzzi-list');
     jacuzziList.innerHTML = '';
@@ -156,6 +151,10 @@ document.getElementById('language').addEventListener('change', function() {
     });
     document.querySelector('#jacuzzi-temp').textContent = trans.jacuzziTempAdvice;
     document.querySelector('#jacuzzi-lid').textContent = trans.jacuzziLidAdvice;
+    document.querySelector('#fireplace h2').textContent = trans.fireplaceTitle;
+    document.querySelector('#fireplace p').textContent = trans.fireplaceText;
+    document.querySelector('#sauna h2').textContent = trans.saunaTitle;
+    document.querySelector('#sauna p').textContent = trans.saunaText;
     document.querySelector('#departure h2').textContent = trans.departureTitle;
     document.querySelector('#departure p').textContent = trans.departureText;
     const list = document.querySelector('#departure ul');
@@ -169,7 +168,15 @@ document.getElementById('language').addEventListener('change', function() {
     outroP.textContent = trans.departureOutro;
     document.querySelector('#waste h2').textContent = trans.wasteTitle;
     document.querySelector('#waste p').textContent = trans.wasteText;
+}
+
+document.getElementById('language').addEventListener('change', function() {
+    const lang = this.value;
+    updateContent(lang);
 });
+
+// Initial load
+updateContent();
 
 document.getElementById('download-pdf').addEventListener('click', function() {
     const element = document.querySelector('.container');
