@@ -25,7 +25,11 @@ const translations = {
         jacuzziShowerAdvice: "Før bruk ønsker vi at alle som skal bruke boblebadet tar en kjapp dusj. Dette er for å sikre et hyggelig og rent miljø for alle.",
         jacuzziChlorineAdvice: "Etter bruk skal det settes oppi 1 stk klor tablett for å holde vannet rent.",
         fireplaceTitle: "🔥 Peis",
-        fireplaceText: "Peisen kan brukes til å varme opp hytta. Sørg for at det ikke er brannfare, og slukk alltid peisen før dere forlater stedet.",
+        fireplaceIntro: "Peisen kan brukes til å varme opp hytta. Sørg for at det ikke er brannfare, og slukk alltid peisen før dere forlater stedet.",
+        fireplaceStart: "Når vi bruker peisen anbefaler vi at dere legger inn 3 stk vedkubber og setter spjeld til maks.",
+        fireplaceAdjust: "Når det er god fyr i ovnen kan dere justere ned til under middels med døren helt lukket.",
+        fireplaceDraught: "Det er veldig god trekk i denne ovnen.",
+        fireplaceStanding: "Dere kan sette vedkubber stående for beste mulig fyr.",
         saunaTitle: "🧖 Badstue",
         saunaText: "Badstuen er tilgjengelig for avslapning. Følg sikkerhetsinstruksjonene og ikke bruk den uten tilsyn.",
         departureTitle: "📋 Ved Avreise",
@@ -66,7 +70,11 @@ const translations = {
         jacuzziShowerAdvice: "Før brug ønsker vi, at alle som skal bruge boblebadet tager et hurtigt bad. Dette er for at sikre et hyggeligt og rent miljø for alle.",
         jacuzziChlorineAdvice: "Efter brug skal der sættes 1 stk klor tablet op i for at holde vandet rent.",
         fireplaceTitle: "🔥 Peis",
-        fireplaceText: "Peisen kan brukes til å varme opp hytta. Sørg for at det ikke er brannfare, og slukk alltid peisen før dere forlater stedet.",
+        fireplaceIntro: "Peisen kan brukes til å varme opp hytta. Sørg for at det ikke er brannfare, og slukk alltid peisen før dere forlater stedet.",
+        fireplaceStart: "Når vi bruker peisen anbefaler vi at dere legger inn 3 stk vedkubber og setter spjeld til maks.",
+        fireplaceAdjust: "Når det er god fyr i ovnen kan dere justere ned til under middels med døren helt lukket.",
+        fireplaceDraught: "Det er veldig god trekk i denne ovnen.",
+        fireplaceStanding: "Dere kan sette vedkubber stående for beste mulig fyr.",
         saunaTitle: "🧖 Badstue",
         saunaText: "Badstuen er tilgjengelig for avslapning. Følg sikkerhetsinstruksjonene og ikke bruk den uten tilsyn.",
         departureTitle: "📋 Ved Afrejse",
@@ -107,7 +115,11 @@ const translations = {
         jacuzziShowerAdvice: "Vor der Nutzung möchten wir, dass alle, die den Whirlpool benutzen möchten, eine kurze Dusche nehmen. Dies dient dazu, eine angenehme und saubere Umgebung für alle zu gewährleisten.",
         jacuzziChlorineAdvice: "Nach der Nutzung sollte 1 Chlor-Tablette hineingegeben werden, um das Wasser sauber zu halten.",
         fireplaceTitle: "🔥 Kamin",
-        fireplaceText: "Der Kamin kann verwendet werden, um die Hütte zu heizen. Stellen Sie sicher, dass keine Brandgefahr besteht, und löschen Sie den Kamin immer, bevor Sie den Ort verlassen.",
+        fireplaceIntro: "Der Kamin kann verwendet werden, um die Hütte zu heizen. Stellen Sie sicher, dass keine Brandgefahr besteht, und löschen Sie den Kamin immer, bevor Sie den Ort verlassen.",
+        fireplaceStart: "Wenn wir den Kamin verwenden, empfehlen wir, 3 Holzscheite einzulegen und die Klappe auf Maximum zu stellen.",
+        fireplaceAdjust: "Wenn das Feuer im Ofen gut brennt, können Sie auf unter Mittel herunterdrehen, mit der Tür vollständig geschlossen.",
+        fireplaceDraught: "Es gibt einen sehr guten Zug in diesem Ofen.",
+        fireplaceStanding: "Sie können die Holzscheite stehend platzieren für das beste mögliche Feuer.",
         saunaTitle: "🧖 Sauna",
         saunaText: "Die Sauna steht zur Entspannung zur Verfügung. Befolgen Sie die Sicherheitsanweisungen und verwenden Sie sie nicht ohne Aufsicht.",
 
@@ -149,7 +161,11 @@ const translations = {
         jacuzziShowerAdvice: "Before use, we ask that everyone who wants to use the jacuzzi takes a quick shower. This is to ensure a pleasant and clean environment for everyone.",
         jacuzziChlorineAdvice: "After use, 1 chlorine tablet should be added to keep the water clean.",
         fireplaceTitle: "🔥 Fireplace",
-        fireplaceText: "The fireplace can be used to heat the cabin. Ensure there is no fire hazard, and always extinguish the fireplace before leaving.",
+        fireplaceIntro: "The fireplace can be used to heat the cabin. Ensure there is no fire hazard, and always extinguish the fireplace before leaving.",
+        fireplaceStart: "When using the fireplace, we recommend putting in 3 logs and setting the damper to maximum.",
+        fireplaceAdjust: "When there is a good fire in the stove, you can adjust down to below medium with the door completely closed.",
+        fireplaceDraught: "There is very good draught in this stove.",
+        fireplaceStanding: "You can place the logs standing for the best possible fire.",
         saunaTitle: "🧖 Sauna",
         saunaText: "The sauna is available for relaxation. Follow safety instructions and do not use it unsupervised.",
         departureTitle: "📋 Upon Departure",
@@ -197,7 +213,11 @@ function updateContent(lang = 'no') {
     document.querySelector('#jacuzzi-shower').textContent = trans.jacuzziShowerAdvice;
     document.querySelector('#jacuzzi-chlorine').textContent = trans.jacuzziChlorineAdvice;
     document.querySelector('#fireplace h2').textContent = trans.fireplaceTitle;
-    document.querySelector('#fireplace p').textContent = trans.fireplaceText;
+    document.querySelector('#fireplace-intro').textContent = trans.fireplaceIntro;
+    document.querySelector('#fireplace-start').textContent = trans.fireplaceStart;
+    document.querySelector('#fireplace-adjust').textContent = trans.fireplaceAdjust;
+    document.querySelector('#fireplace-draught').textContent = trans.fireplaceDraught;
+    document.querySelector('#fireplace-standing').textContent = trans.fireplaceStanding;
     document.querySelector('#sauna h2').textContent = trans.saunaTitle;
     document.querySelector('#sauna p').textContent = trans.saunaText;
     document.querySelector('#departure h2').textContent = trans.departureTitle;
