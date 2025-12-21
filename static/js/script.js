@@ -3,6 +3,13 @@ const translations = {
         title: "Velkommen til Rytterveien 166",
         subtitle: "Guide og hjelpeside",
         tocTitle: "Innholdsfortegnelse",
+        waterToc: "💧 Vannforsyning",
+        bedroomsToc: "🛏️ Soverom",
+        jacuzziToc: "🛁 Boblebad",
+        fireplaceToc: "🔥 Peis",
+        saunaToc: "🧖 Badstue",
+        wasteToc: "♻️ Søppelsortering",
+        departureToc: "📋 Ved Avreise",
         waterTitle: "💧 Vannforsyning",
         waterText: "Vannkranen må åpnes når dere ankommer og lukkes når dere forlater hytta. Dette sikrer at rørene ikke fryser om vinteren.",
         bedroomsTitle: "🛏️ Soverom",
@@ -35,6 +42,13 @@ const translations = {
         title: "Velkommen til Rytterveien 166",
         subtitle: "Guide og hjælpeside",
         tocTitle: "Indholdsfortegnelse",
+        waterToc: "Vandforsyning",
+        bedroomsToc: "Soveværelser",
+        jacuzziToc: "🛁 Boblebad",
+        fireplaceToc: "🔥 Peis",
+        saunaToc: "🧖 Badstue",
+        wasteToc: "Affaldssortering",
+        departureToc: "📋 Ved Afrejse",
         waterTitle: "Vandforsyning",
         waterText: "Vandhanen skal åbnes når I ankommer og lukkes når I forlader hytten. Dette sikrer at rørene ikke fryser om vinteren.",
         bedroomsTitle: "Soveværelser",
@@ -67,6 +81,13 @@ const translations = {
         title: "Willkommen in der Rytterveien 166",
         subtitle: "Leitfaden und Hilfeseite",
         tocTitle: "Inhaltsverzeichnis",
+        waterToc: "Wasserversorgung",
+        bedroomsToc: "Schlafzimmer",
+        jacuzziToc: "🛁 Whirlpool",
+        fireplaceToc: "🔥 Kamin",
+        saunaToc: "🧖 Sauna",
+        wasteToc: "Abfallsortierung",
+        departureToc: "📋 Bei Abreise",
         waterTitle: "Wasserversorgung",
         waterText: "Der Wasserhahn muss beim Ankommen geöffnet und beim Verlassen der Hütte geschlossen werden. Dies stellt sicher, dass die Rohre im Winter nicht einfrieren.",
         bedroomsTitle: "Schlafzimmer",
@@ -100,6 +121,13 @@ const translations = {
         title: "Welcome to Rytterveien 166",
         subtitle: "Guide and help page",
         tocTitle: "Table of Contents",
+        waterToc: "Water Supply",
+        bedroomsToc: "Bedrooms",
+        jacuzziToc: "🛁 Jacuzzi",
+        fireplaceToc: "🔥 Fireplace",
+        saunaToc: "🧖 Sauna",
+        wasteToc: "Waste Sorting",
+        departureToc: "📋 Upon Departure",
         waterTitle: "Water Supply",
         waterText: "The water tap must be opened upon arrival and closed when leaving the cabin. This ensures that the pipes do not freeze in winter.",
         bedroomsTitle: "Bedrooms",
@@ -136,6 +164,13 @@ function updateContent(lang = 'no') {
     document.querySelector('.hero h1').textContent = trans.title;
     document.getElementById('subtitle').textContent = trans.subtitle;
     document.getElementById('toc-title').textContent = trans.tocTitle;
+    document.querySelector('#toc a[href="#water"]').textContent = trans.waterToc;
+    document.querySelector('#toc a[href="#bedrooms"]').textContent = trans.bedroomsToc;
+    document.querySelector('#toc a[href="#jacuzzi"]').textContent = trans.jacuzziToc;
+    document.querySelector('#toc a[href="#fireplace"]').textContent = trans.fireplaceToc;
+    document.querySelector('#toc a[href="#sauna"]').textContent = trans.saunaToc;
+    document.querySelector('#toc a[href="#waste"]').textContent = trans.wasteToc;
+    document.querySelector('#toc a[href="#departure"]').textContent = trans.departureToc;
     document.querySelector('#water h2').textContent = trans.waterTitle;
     document.querySelector('#water p').textContent = trans.waterText;
     document.querySelector('#bedrooms h2').textContent = trans.bedroomsTitle;
