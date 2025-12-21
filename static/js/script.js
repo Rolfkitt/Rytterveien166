@@ -50,7 +50,10 @@ const translations = {
         skiPrices: "For priser på heiskort, se nedenfor:",
         skiPricesList: "Voksen (dag): 500 NOK\nBarn (dag): 300 NOK\nSesongkort: 5000 NOK",
         cafeTitle: "☕ Kafe",
-        cafeIntro: "Kafeen ligger rett ved siden av hytten, kun 200 meter gangavstand og er en fin spasertur fra hytta. Her kan dere nyte en god kopp kaffe eller noe å spise."
+        cafeIntro: "Kafeen ligger rett ved siden av hytten, kun 200 meter gangavstand og er en fin spasertur fra hytta. Her kan dere nyte en god kopp kaffe eller noe å spise.",
+        weatherToc: "🌤️ Værmelding",
+        weatherTitle: "🌤️ Værmelding",
+        weatherIntro: "Her er værvarslet for Gautefall skisenter de neste 7 dagene, hentet fra Yr.no."
     },
     da: {
         title: "Velkommen til Rytterveien 166",
@@ -103,7 +106,10 @@ const translations = {
         skiPrices: "For priser på heiskort, se nedenfor:",
         skiPricesList: "Voksen (dag): 500 DKK\nBarn (dag): 300 DKK\nSesongkort: 5000 DKK",
         cafeTitle: "☕ Kafe",
-        cafeIntro: "Kafeen ligger lige ved siden af hytten, kun 200 meter gangafstand og er en fin spadseretur fra hytten. Her kan I nyde en god kop kaffe eller noget at spise."
+        cafeIntro: "Kafeen ligger lige ved siden af hytten, kun 200 meter gangafstand og er en fin spadseretur fra hytten. Her kan I nyde en god kop kaffe eller noget at spise.",
+        weatherToc: "🌤️ Vejrudsigt",
+        weatherTitle: "🌤️ Vejrudsigt",
+        weatherIntro: "Her er vejrudsigten for Gautefall skisenter de næste 7 dage, hentet fra Yr.no."
     },
     de: {
         title: "Willkommen in der Rytterveien 166",
@@ -157,7 +163,10 @@ const translations = {
         skiPrices: "Für Preise von Liftkarten, siehe unten:",
         skiPricesList: "Erwachsener (Tag): 50 EUR\nKind (Tag): 30 EUR\nSaisonkarte: 500 EUR",
         cafeTitle: "☕ Kafe",
-        cafeIntro: "Das Café liegt direkt neben der Hütte, nur 200 Meter zu Fuß und ist ein schöner Spaziergang von der Hütte. Hier können Sie einen guten Kaffee oder etwas zu essen genießen."
+        cafeIntro: "Das Café liegt direkt neben der Hütte, nur 200 Meter zu Fuß und ist ein schöner Spaziergang von der Hütte. Hier können Sie einen guten Kaffee oder etwas zu essen genießen.",
+        weatherToc: "🌤️ Wettervorhersage",
+        weatherTitle: "🌤️ Wettervorhersage",
+        weatherIntro: "Hier ist die Wettervorhersage für das Gautefall Skizentrum für die nächsten 7 Tage, abgerufen von Yr.no."
     },
     en: {
         title: "Welcome to Rytterveien 166",
@@ -210,7 +219,10 @@ const translations = {
         skiPrices: "For lift ticket prices, see below:",
         skiPricesList: "Adult (day): 50 USD\nChild (day): 30 USD\nSeason pass: 500 USD",
         cafeTitle: "☕ Cafe",
-        cafeIntro: "The cafe is located right next to the cabin, only 200 meters walking distance and is a nice walk from the cabin. Here you can enjoy a good cup of coffee or something to eat."
+        cafeIntro: "The cafe is located right next to the cabin, only 200 meters walking distance and is a nice walk from the cabin. Here you can enjoy a good cup of coffee or something to eat.",
+        weatherToc: "🌤️ Weather Forecast",
+        weatherTitle: "🌤️ Weather Forecast",
+        weatherIntro: "Here is the weather forecast for Gautefall ski center for the next 7 days, retrieved from Yr.no."
     }
 };
 
@@ -228,6 +240,7 @@ function updateContent(lang = 'no') {
     document.querySelector('#toc a[href="#waste"]').textContent = trans.wasteToc;
     document.querySelector('#toc a[href="#ski"]').textContent = trans.skiToc;
     document.querySelector('#toc a[href="#cafe"]').textContent = trans.cafeToc;
+    document.querySelector('#toc a[href="#weather"]').textContent = trans.weatherToc;
     document.querySelector('#toc a[href="#departure"]').textContent = trans.departureToc;
     document.querySelector('#water h2').textContent = trans.waterTitle;
     document.querySelector('#water p').textContent = trans.waterText;
@@ -280,6 +293,46 @@ function updateContent(lang = 'no') {
     });
     document.querySelector('#cafe h2').textContent = trans.cafeTitle;
     document.querySelector('#cafe-intro').textContent = trans.cafeIntro;
+    document.querySelector('#weather h2').textContent = trans.weatherTitle;
+    document.querySelector('#weather-intro').textContent = trans.weatherIntro;
+}
+
+async function fetchWeather() {
+    const forecastDiv = document.getElementById('weather-forecast');
+    forecastDiv.innerHTML = 'Laster værvarsel...';
+    try {
+        const response = await fetch('https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=58.8167&lon=7.7833', {
+            headers: {
+                'User-Agent': 'Rytterveien166-Guide/1.0 (rolf.kittelsen@imstec.no)'
+            }
+        });
+        if (!response.ok) throw new Error('API error');
+        const data = await response.json();
+        const timeseries = data.properties.timeseries;
+        
+        // Get next 7 days, one per day at noon
+        const now = new Date();
+        const forecasts = [];
+        for (let i = 0; i < 7; i++) {
+            const date = new Date(now);
+            date.setDate(now.getDate() + i);
+            date.setHours(12, 0, 0, 0);
+            const iso = date.toISOString();
+            const entry = timeseries.find(t => t.time.startsWith(iso.slice(0, 13))); // match hour
+            if (entry) forecasts.push({ date, data: entry.data });
+        }
+        
+        forecastDiv.innerHTML = '<ul>' + forecasts.map(f => {
+            const temp = f.data.instant.details.air_temperature;
+            const symbol = f.data.next_1_hours?.summary.symbol_code || 'unknown';
+            const precip = f.data.next_1_hours?.details.precipitation_amount || 0;
+            const day = f.date.toLocaleDateString('no-NO', { weekday: 'long', month: 'short', day: 'numeric' });
+            return `<li>${day}: ${temp}°C, ${symbol.replace('_', ' ')}, Nedbør: ${precip} mm</li>`;
+        }).join('') + '</ul>';
+    } catch (error) {
+        forecastDiv.innerHTML = 'Kunne ikke laste værvarsel. Prøv igjen senere.';
+        console.error(error);
+    }
 }
 
 document.getElementById('language').addEventListener('change', function() {
@@ -288,7 +341,10 @@ document.getElementById('language').addEventListener('change', function() {
 });
 
 // Initial load
-window.addEventListener('load', () => updateContent());
+window.addEventListener('load', () => {
+    updateContent();
+    fetchWeather();
+});
 
 document.getElementById('download-pdf').addEventListener('click', function() {
     const element = document.querySelector('.container');
