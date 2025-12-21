@@ -302,7 +302,6 @@ function updateContent(lang = 'no') {
 }
 
 function getWeatherIcon(symbol) {
-    console.log('Symbol:', symbol);
     const iconMap = {
         'clearsky_day': '☀️',
         'clearsky_night': '🌙',
@@ -334,9 +333,9 @@ function getWeatherIcon(symbol) {
         'rainshowersandthunder': '⛈️',
         'sleetshowersandthunder': '⛈️',
         'snowshowersandthunder': '⛈️',
-        'unknown': '❓'
+        'unknown': '🌨️'
     };
-    return iconMap[symbol] || (symbol + ' ❓');
+    return iconMap[symbol] || '🌨️';
 }
 
 async function fetchWeather(lang = 'no') {
