@@ -385,7 +385,7 @@ async function fetchWeather(lang = 'no') {
             }
         }
         
-        const icons = forecasts.map(f => getWeatherIcon(f.data.next_1_hours?.summary.symbol_code || 'unknown'));
+        const icons = forecasts.map(f => getWeatherIcon(f.symbol));
 
         forecastDiv.innerHTML = '<div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">' + forecasts.map((f, index) => {
             const icon = getWeatherIcon(f.symbol);
