@@ -275,20 +275,24 @@ function updateContent(lang = 'no') {
     });
     const jacuzziAdvice = document.querySelector('#jacuzzi-advice');
     jacuzziAdvice.innerHTML = '';
-    trans.jacuzziAdvice.forEach(item => {
-        const li = document.createElement('li');
-        li.textContent = item;
-        jacuzziAdvice.appendChild(li);
-    });
+    if (trans.jacuzziAdvice) {
+        trans.jacuzziAdvice.forEach(item => {
+            const li = document.createElement('li');
+            li.textContent = item;
+            jacuzziAdvice.appendChild(li);
+        });
+    }
     document.querySelector('#fireplace h2').textContent = trans.fireplaceTitle;
     document.querySelector('#fireplace-intro').textContent = trans.fireplaceIntro;
     const fireplaceSteps = document.querySelector('#fireplace-steps');
     fireplaceSteps.innerHTML = '';
-    trans.fireplaceSteps.forEach(item => {
-        const li = document.createElement('li');
-        li.textContent = item;
-        fireplaceSteps.appendChild(li);
-    });
+    if (trans.fireplaceSteps) {
+        trans.fireplaceSteps.forEach(item => {
+            const li = document.createElement('li');
+            li.textContent = item;
+            fireplaceSteps.appendChild(li);
+        });
+    }
     document.querySelector('#sauna h2').textContent = trans.saunaTitle;
     document.querySelector('#sauna p').textContent = trans.saunaText;
     document.querySelector('#departure h2').textContent = trans.departureTitle;
