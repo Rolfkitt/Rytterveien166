@@ -37,10 +37,12 @@ body {
 .hero h1 {
     margin: 0;
     font-size: 2.5em;
+    color: white;
 }
 
 .hero p {
     font-size: 1.2em;
+    color: white;
 }
 
 .language-selector {
@@ -71,6 +73,16 @@ body {
 
 #toc {
     margin-bottom: 20px;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid #007bff;
+}
+
+#toc h2 {
+    color: #007bff;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 #toc ul {
@@ -79,7 +91,22 @@ body {
 }
 
 #toc li {
-    margin: 5px 0;
+    margin: 10px 0;
+}
+
+#toc a {
+    text-decoration: none;
+    color: #007bff;
+    padding: 8px 12px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    display: block;
+}
+
+#toc a:hover {
+    background-color: #007bff;
+    color: white;
 }
 
 section {

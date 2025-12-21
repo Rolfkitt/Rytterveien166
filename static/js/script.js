@@ -1,21 +1,27 @@
 const translations = {
     no: {
         title: "Velkommen til Rytterveien 166",
-        subtitle: "Din perfekte hytteopplevelse venter",
+        subtitle: "Guide og hjelpeside",
         tocTitle: "Innholdsfortegnelse",
         waterTitle: "💧 Vannforsyning",
         waterText: "Vannkranen må åpnes når dere ankommer og lukkes når dere forlater hytta. Dette sikrer at rørene ikke fryser om vinteren.",
         bedroomsTitle: "🛏️ Soverom",
         bedroomsText: "Soverommene er ryddet opp og klargjort for dere. Alle senger er gjort med rent sengetøy.",
         jacuzziTitle: "🛁 Boblebad",
+        jacuzziIntro: "Vi tar godt vare på boblebadet for å sikre en hyggelig opplevelse for dere. Her er siste vedlikehold:",
+        jacuzziList: [
+            "Vannskifte: Sist utført 15. desember 2024",
+            "Kvalitetssjekk (klorinnhold): Sist utført 20. desember 2024"
+        ],
+        jacuzziTempAdvice: "Vi anbefaler at dere setter temperaturen til 38 grader ved ankomst. Dette gjør dere ved å trykke på displayet på boblebadet til ønsket temperatur vises.",
+        jacuzziLidAdvice: "Viktig: Husk å sette lokket på boblebadet når det ikke er i bruk for å spare energi! 🔋💚",
         fireplaceTitle: "🔥 Peis",
         fireplaceText: "Peisen kan brukes til å varme opp hytta. Sørg for at det ikke er brannfare, og slukk alltid peisen før dere forlater stedet.",
         saunaTitle: "🧖 Badstue",
         saunaText: "Badstuen er tilgjengelig for avslapning. Følg sikkerhetsinstruksjonene og ikke bruk den uten tilsyn.",
-        waterChange: "Sist gang vannet ble skiftet:",
-        chlorineCheck: "Sist gang boblebadet ble målt for klorinnhold:",
         departureTitle: "📋 Ved Avreise",
-        departureText: "Vennligst gjør følgende før dere forlater hytta:",
+        departureText: "Vi setter stor pris på om dere kan gjøre følgende før dere forlater hytta:",
+        departureOutro: "Håper at dere har hatt et hyggelig opphold!",
         departureList: [
             "Ta alt brukte håndklær og sengetøy og kast dem i vaskemaskinen.",
             "Skru av vannet.",
@@ -27,21 +33,27 @@ const translations = {
     },
     da: {
         title: "Velkommen til Rytterveien 166",
-        subtitle: "Din perfekte hytteoplevelse venter",
+        subtitle: "Guide og hjælpeside",
         tocTitle: "Indholdsfortegnelse",
         waterTitle: "Vandforsyning",
         waterText: "Vandhanen skal åbnes når I ankommer og lukkes når I forlader hytten. Dette sikrer at rørene ikke fryser om vinteren.",
         bedroomsTitle: "Soveværelser",
         bedroomsText: "Soveværelserne er ryddet op og gjort klar til jer. Alle senge er gjort med rent sengetøj.",
         jacuzziTitle: "🛁 Boblebad",
+        jacuzziIntro: "Vi tager godt vare på boblebadet for at sikre en hyggelig oplevelse for jer. Her er sidste vedligeholdelse:",
+        jacuzziList: [
+            "Vandskifte: Sidst udført 15. december 2024",
+            "Kvalitetstjek (klorindhold): Sidst udført 20. december 2024"
+        ],
+        jacuzziTempAdvice: "Vi anbefaler, at I sætter temperaturen til 38 grader ved ankomst. Dette gør I ved at trykke på displayet på boblebadet til ønsket temperatur vises.",
+        jacuzziLidAdvice: "Vigtigt: Husk at sætte låget på boblebadet, når det ikke er i brug for at spare energi! 🔋💚",
         fireplaceTitle: "🔥 Peis",
         fireplaceText: "Peisen kan brukes til å varme opp hytta. Sørg for at det ikke er brannfare, og slukk alltid peisen før dere forlater stedet.",
         saunaTitle: "🧖 Badstue",
         saunaText: "Badstuen er tilgjengelig for avslapning. Følg sikkerhetsinstruksjonene og ikke bruk den uten tilsyn.",
-        waterChange: "Sidste gang vandet blev skiftet:",
-        chlorineCheck: "Sidste gang boblebadet blev målt for klorindhold:",
         departureTitle: "📋 Ved Afrejse",
         departureText: "Venligst gør følgende før I forlader hytten:",
+        departureOutro: "Håber at I har haft et hyggeligt ophold!",
         departureList: [
             "Tag alt brugt håndklæder og sengetøj og kast dem i vaskemaskinen.",
             "Sluk for vandet.",
@@ -53,21 +65,28 @@ const translations = {
     },
     de: {
         title: "Willkommen in der Rytterveien 166",
-        subtitle: "Ihr perfektes Hüttenerlebnis wartet",
+        subtitle: "Leitfaden und Hilfeseite",
         tocTitle: "Inhaltsverzeichnis",
         waterTitle: "Wasserversorgung",
         waterText: "Der Wasserhahn muss beim Ankommen geöffnet und beim Verlassen der Hütte geschlossen werden. Dies stellt sicher, dass die Rohre im Winter nicht einfrieren.",
         bedroomsTitle: "Schlafzimmer",
         bedroomsText: "Die Schlafzimmer sind aufgeräumt und für Sie vorbereitet. Alle Betten sind mit frischer Bettwäsche bezogen.",
         jacuzziTitle: "🛁 Whirlpool",
+        jacuzziIntro: "Wir kümmern uns gut um den Whirlpool, um Ihnen ein angenehmes Erlebnis zu garantieren. Hier ist die letzte Wartung:",
+        jacuzziList: [
+            "Wasserwechsel: Zuletzt durchgeführt am 15. Dezember 2024",
+            "Qualitätsprüfung (Chlorgehalt): Zuletzt durchgeführt am 20. Dezember 2024"
+        ],
+        jacuzziTempAdvice: "Wir empfehlen, die Temperatur bei Ankunft auf 38 Grad einzustellen. Dies tun Sie, indem Sie auf das Display des Whirlpools drücken, bis die gewünschte Temperatur angezeigt wird.",
+        jacuzziLidAdvice: "Wichtig: Denken Sie daran, den Deckel auf den Whirlpool zu legen, wenn er nicht in Gebrauch ist, um Energie zu sparen! 🔋💚",
         fireplaceTitle: "🔥 Kamin",
         fireplaceText: "Der Kamin kann verwendet werden, um die Hütte zu heizen. Stellen Sie sicher, dass keine Brandgefahr besteht, und löschen Sie den Kamin immer, bevor Sie den Ort verlassen.",
         saunaTitle: "🧖 Sauna",
         saunaText: "Die Sauna steht zur Entspannung zur Verfügung. Befolgen Sie die Sicherheitsanweisungen und verwenden Sie sie nicht ohne Aufsicht.",
-        waterChange: "Letztes Mal Wasser gewechselt:",
-        chlorineCheck: "Letztes Mal Whirlpool auf Chlorgehalt überprüft:",
+
         departureTitle: "📋 Bei Abreise",
         departureText: "Bitte tun Sie Folgendes, bevor Sie die Hütte verlassen:",
+        departureOutro: "Wir hoffen, Sie hatten einen angenehmen Aufenthalt!",
         departureList: [
             "Nehmen Sie alle gebrauchten Handtücher und Bettwäsche und werfen Sie sie in die Waschmaschine.",
             "Schalten Sie das Wasser ab.",
@@ -79,21 +98,27 @@ const translations = {
     },
     en: {
         title: "Welcome to Rytterveien 166",
-        subtitle: "Your perfect cabin experience awaits",
+        subtitle: "Guide and help page",
         tocTitle: "Table of Contents",
         waterTitle: "Water Supply",
         waterText: "The water tap must be opened upon arrival and closed when leaving the cabin. This ensures that the pipes do not freeze in winter.",
         bedroomsTitle: "Bedrooms",
         bedroomsText: "The bedrooms are tidied up and prepared for you. All beds are made with clean linens.",
         jacuzziTitle: "🛁 Jacuzzi",
+        jacuzziIntro: "We take good care of the jacuzzi to ensure a pleasant experience for you. Here is the latest maintenance:",
+        jacuzziList: [
+            "Water change: Last performed December 15, 2024",
+            "Quality check (chlorine content): Last performed December 20, 2024"
+        ],
+        jacuzziTempAdvice: "We recommend setting the temperature to 38 degrees upon arrival. You do this by pressing the display on the jacuzzi until the desired temperature is shown.",
+        jacuzziLidAdvice: "Important: Remember to put the lid on the jacuzzi when not in use to save energy! 🔋💚",
         fireplaceTitle: "🔥 Fireplace",
         fireplaceText: "The fireplace can be used to heat the cabin. Ensure there is no fire hazard, and always extinguish the fireplace before leaving.",
         saunaTitle: "🧖 Sauna",
         saunaText: "The sauna is available for relaxation. Follow safety instructions and do not use it unsupervised.",
-        waterChange: "Last time water was changed:",
-        chlorineCheck: "Last time jacuzzi was tested for chlorine content:",
         departureTitle: "📋 Upon Departure",
         departureText: "Please do the following before leaving the cabin:",
+        departureOutro: "We hope you had a pleasant stay!",
         departureList: [
             "Take all used towels and bed linens and put them in the washing machine.",
             "Turn off the water.",
@@ -121,8 +146,16 @@ document.getElementById('language').addEventListener('change', function() {
     document.querySelector('#fireplace p').textContent = trans.fireplaceText;
     document.querySelector('#sauna h2').textContent = trans.saunaTitle;
     document.querySelector('#sauna p').textContent = trans.saunaText;
-    document.querySelector('#jacuzzi p:first-of-type').childNodes[0].textContent = trans.waterChange;
-    document.querySelector('#jacuzzi p:last-of-type').childNodes[0].textContent = trans.chlorineCheck;
+    document.querySelector('#jacuzzi-intro').textContent = trans.jacuzziIntro;
+    const jacuzziList = document.querySelector('#jacuzzi-list');
+    jacuzziList.innerHTML = '';
+    trans.jacuzziList.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = item;
+        jacuzziList.appendChild(li);
+    });
+    document.querySelector('#jacuzzi-temp').textContent = trans.jacuzziTempAdvice;
+    document.querySelector('#jacuzzi-lid').textContent = trans.jacuzziLidAdvice;
     document.querySelector('#departure h2').textContent = trans.departureTitle;
     document.querySelector('#departure p').textContent = trans.departureText;
     const list = document.querySelector('#departure ul');
@@ -132,6 +165,8 @@ document.getElementById('language').addEventListener('change', function() {
         li.textContent = item;
         list.appendChild(li);
     });
+    const outroP = document.querySelector('#departure p:last-of-type');
+    outroP.textContent = trans.departureOutro;
     document.querySelector('#waste h2').textContent = trans.wasteTitle;
     document.querySelector('#waste p').textContent = trans.wasteText;
 });
