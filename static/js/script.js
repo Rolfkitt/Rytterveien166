@@ -211,7 +211,7 @@ document.getElementById('language').addEventListener('change', function() {
 });
 
 // Initial load
-updateContent();
+window.addEventListener('load', () => updateContent());
 
 document.getElementById('download-pdf').addEventListener('click', function() {
     const element = document.querySelector('.container');
