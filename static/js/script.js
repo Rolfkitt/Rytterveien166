@@ -302,6 +302,7 @@ function updateContent(lang = 'no') {
 }
 
 function getWeatherIcon(symbol) {
+    console.log('Symbol:', symbol);
     const iconMap = {
         'clearsky_day': '☀️',
         'clearsky_night': '🌙',
