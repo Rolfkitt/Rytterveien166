@@ -22,6 +22,8 @@ const translations = {
         ],
         jacuzziTempAdvice: "Vi anbefaler at dere setter temperaturen til 38 grader ved ankomst. Dette gjør dere ved å trykke på displayet på boblebadet til ønsket temperatur vises.",
         jacuzziLidAdvice: "Viktig: Husk å sette lokket på boblebadet når det ikke er i bruk for å spare energi! 🔋💚",
+        jacuzziShowerAdvice: "Før bruk ønsker vi at alle som skal bruke boblebadet tar en kjapp dusj. Dette er for å sikre et hyggelig og rent miljø for alle.",
+        jacuzziChlorineAdvice: "Etter bruk skal det settes oppi 1 stk klor tablett for å holde vannet rent.",
         fireplaceTitle: "🔥 Peis",
         fireplaceText: "Peisen kan brukes til å varme opp hytta. Sørg for at det ikke er brannfare, og slukk alltid peisen før dere forlater stedet.",
         saunaTitle: "🧖 Badstue",
@@ -61,6 +63,8 @@ const translations = {
         ],
         jacuzziTempAdvice: "Vi anbefaler, at I sætter temperaturen til 38 grader ved ankomst. Dette gør I ved at trykke på displayet på boblebadet til ønsket temperatur vises.",
         jacuzziLidAdvice: "Vigtigt: Husk at sætte låget på boblebadet, når det ikke er i brug for at spare energi! 🔋💚",
+        jacuzziShowerAdvice: "Før brug ønsker vi, at alle som skal bruge boblebadet tager et hurtigt bad. Dette er for at sikre et hyggeligt og rent miljø for alle.",
+        jacuzziChlorineAdvice: "Efter brug skal der sættes 1 stk klor tablet op i for at holde vandet rent.",
         fireplaceTitle: "🔥 Peis",
         fireplaceText: "Peisen kan brukes til å varme opp hytta. Sørg for at det ikke er brannfare, og slukk alltid peisen før dere forlater stedet.",
         saunaTitle: "🧖 Badstue",
@@ -100,6 +104,8 @@ const translations = {
         ],
         jacuzziTempAdvice: "Wir empfehlen, die Temperatur bei Ankunft auf 38 Grad einzustellen. Dies tun Sie, indem Sie auf das Display des Whirlpools drücken, bis die gewünschte Temperatur angezeigt wird.",
         jacuzziLidAdvice: "Wichtig: Denken Sie daran, den Deckel auf den Whirlpool zu legen, wenn er nicht in Gebrauch ist, um Energie zu sparen! 🔋💚",
+        jacuzziShowerAdvice: "Vor der Nutzung möchten wir, dass alle, die den Whirlpool benutzen möchten, eine kurze Dusche nehmen. Dies dient dazu, eine angenehme und saubere Umgebung für alle zu gewährleisten.",
+        jacuzziChlorineAdvice: "Nach der Nutzung sollte 1 Chlor-Tablette hineingegeben werden, um das Wasser sauber zu halten.",
         fireplaceTitle: "🔥 Kamin",
         fireplaceText: "Der Kamin kann verwendet werden, um die Hütte zu heizen. Stellen Sie sicher, dass keine Brandgefahr besteht, und löschen Sie den Kamin immer, bevor Sie den Ort verlassen.",
         saunaTitle: "🧖 Sauna",
@@ -140,6 +146,8 @@ const translations = {
         ],
         jacuzziTempAdvice: "We recommend setting the temperature to 38 degrees upon arrival. You do this by pressing the display on the jacuzzi until the desired temperature is shown.",
         jacuzziLidAdvice: "Important: Remember to put the lid on the jacuzzi when not in use to save energy! 🔋💚",
+        jacuzziShowerAdvice: "Before use, we ask that everyone who wants to use the jacuzzi takes a quick shower. This is to ensure a pleasant and clean environment for everyone.",
+        jacuzziChlorineAdvice: "After use, 1 chlorine tablet should be added to keep the water clean.",
         fireplaceTitle: "🔥 Fireplace",
         fireplaceText: "The fireplace can be used to heat the cabin. Ensure there is no fire hazard, and always extinguish the fireplace before leaving.",
         saunaTitle: "🧖 Sauna",
@@ -186,6 +194,8 @@ function updateContent(lang = 'no') {
     });
     document.querySelector('#jacuzzi-temp').textContent = trans.jacuzziTempAdvice;
     document.querySelector('#jacuzzi-lid').textContent = trans.jacuzziLidAdvice;
+    document.querySelector('#jacuzzi-shower').textContent = trans.jacuzziShowerAdvice;
+    document.querySelector('#jacuzzi-chlorine').textContent = trans.jacuzziChlorineAdvice;
     document.querySelector('#fireplace h2').textContent = trans.fireplaceTitle;
     document.querySelector('#fireplace p').textContent = trans.fireplaceText;
     document.querySelector('#sauna h2').textContent = trans.saunaTitle;
