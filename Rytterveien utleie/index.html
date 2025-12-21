@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rytterveien 166 - Informasjon for Gjester</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <div class="hero">
+        <img src="Main picture.jpeg" alt="Rytterveien 166">
+        <div class="hero-text">
+            <h1>Velkommen til Rytterveien 166</h1>
+            <p id="subtitle">Din perfekte hytteopplevelse venter</p>
+            <div class="language-selector">
+                <label for="language">Språk:</label>
+                <select id="language">
+                    <option value="no">Norsk</option>
+                    <option value="da">Dansk</option>
+                    <option value="de">Deutsch</option>
+                    <option value="en">English</option>
+                </select>
+            </div>
+            <button id="download-pdf">Last ned som PDF</button>
+        </div>
+    </div>
+    <div class="container">
+        <nav id="toc">
+            <h2 id="toc-title">Innholdsfortegnelse</h2>
+            <ul>
+                <li><a href="#water">Vannforsyning</a></li>
+                <li><a href="#bedrooms">Soverom</a></li>
+                <li><a href="#jacuzzi">Boblebad</a></li>
+                <li><a href="#fireplace">Peis</a></li>
+                <li><a href="#sauna">Badstue</a></li>
+                <li><a href="#waste">Søppelsortering</a></li>
+                <li><a href="#departure">Ved Avreise</a></li>
+            </ul>
+        </nav>
+
+        <section id="water">
+            <h2>💧 Vannforsyning</h2>
+            <p>Vannkranen må åpnes når dere ankommer og lukkes når dere forlater hytta. Dette sikrer at rørene ikke fryser om vinteren.</p>
+        </section>
+
+        <section id="bedrooms">
+            <h2>🛏️ Soverom</h2>
+            <p>Soverommene er ryddet opp og klargjort for dere. Alle senger er gjort med rent sengetøy.</p>
+        </section>
+
+        <section id="jacuzzi">
+            <h2>🛁 Boblebad</h2>
+            <p>Sist gang vannet ble skiftet: <input type="text" id="water-change" placeholder="Fyll inn dato"></p>
+            <p>Sist gang boblebadet ble målt for klorinnhold: <input type="text" id="chlorine-check" placeholder="Fyll inn dato"></p>
+        </section>
+
+        <section id="fireplace">
+            <h2>🔥 Peis</h2>
+            <p>Peisen kan brukes til å varme opp hytta. Sørg for at det ikke er brannfare, og slukk alltid peisen før dere forlater stedet.</p>
+        </section>
+
+        <section id="sauna">
+            <h2>🧖 Badstue</h2>
+            <p>Badstuen er tilgjengelig for avslapning. Følg sikkerhetsinstruksjonene og ikke bruk den uten tilsyn.</p>
+        </section>
+
+        <section id="waste">
+            <h2>♻️ Søppelsortering</h2>
+            <p>Vi ber om at dere sorterer søppelet som følger:</p>
+            <p>Bilder av søppelstasjonen vil bli lagt til her.</p>
+            <!-- Bilder kan legges til her -->
+        </section>
+
+        <section id="departure">
+            <h2>📋 Ved Avreise</h2>
+            <p>Vennligst gjør følgende før dere forlater hytta:</p>
+            <ul>
+                <li>Ta alt brukte håndklær og sengetøy og kast dem i vaskemaskinen.</li>
+                <li>Skru av vannet.</li>
+                <li>Heng opp nøkkelen tilbake i nøkkelboksen på utsiden av hoveddøren.</li>
+                <li>Sjekk at alle vinduer og dører er lukket.</li>
+            </ul>
+        </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="static/js/script.js"></script>
+</body>
+</html>
