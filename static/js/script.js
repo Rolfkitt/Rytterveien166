@@ -370,13 +370,13 @@ async function fetchWeather(lang = 'no') {
                 // Sum precipitation
                 const precip = dayEntries.reduce((sum, e) => sum + (e.data.next_1_hours?.details.precipitation_amount || 0), 0);
                 
-                // Find symbol closest to 15:00 (afternoon)
-                const afternoonEntry = dayEntries.reduce((closest, current) => {
+                // Find symbol closest to 12:00 (noon)
+                const noonEntry = dayEntries.reduce((closest, current) => {
                     const currentHour = new Date(current.time).getHours();
                     const closestHour = new Date(closest.time).getHours();
-                    return Math.abs(currentHour - 15) < Math.abs(closestHour - 15) ? current : closest;
+                    return Math.abs(currentHour - 12) < Math.abs(closestHour - 12) ? current : closest;
                 });
-                const symbol = afternoonEntry.data.next_1_hours?.summary.symbol_code || 'unknown';
+                const symbol = noonEntry.data.next_1_hours?.summary.symbol_code || 'unknown';
                 
                 forecasts.push({ date, maxTemp, minTemp, precip, symbol });
             } else {
