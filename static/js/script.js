@@ -402,8 +402,7 @@ async function fetchWeather(lang = 'no') {
                     const closestHour = new Date(closest.time).getHours();
                     return Math.abs(currentHour - 12) < Math.abs(closestHour - 12) ? current : closest;
                 });
-                const symbol = noonEntry.data.next_1_hours?.summary.symbol_code || noonEntry.data.instant.details.symbol_code || 'unknown';
-                console.log('Symbol for', date.toISOString().slice(0, 10), ':', symbol, 'next_1_hours:', !!noonEntry.data.next_1_hours, 'instant symbol:', noonEntry.data.instant.details.symbol_code);
+                const symbol = noonEntry.data.next_12_hours?.summary.symbol_code || noonEntry.data.next_6_hours?.summary.symbol_code || noonEntry.data.next_1_hours?.summary.symbol_code || noonEntry.data.instant.details.symbol_code || 'fair_day';
                 
                 forecasts.push({ date, maxTemp, minTemp, precip, symbol });
             } else {
