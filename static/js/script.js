@@ -17,7 +17,7 @@ const translations = {
         bedroomsTitle: "🛏️ Soverom",
         bedroomsText: "Soverommene er ryddet opp og klargjort for dere. Alle senger er gjort med rent sengetøy.",
         jacuzziTitle: "🛁 Jacuzzi",
-        jacuzziIntro: "Vi tar godt vare på jacuzzien 🛁 for å sikre en hyggelig opplevelse for dere. Her er siste vedlikehold: 🔧",
+        jacuzziIntro: "Vi tar godt vare på jacuzzien for å sikre en hyggelig opplevelse for dere. Her er siste vedlikehold:",
         jacuzziList: [
             "Vannskifte: Sist utført 15. desember 2024",
             "Kvalitetssjekk (klorinnhold): Sist utført 20. desember 2024"
@@ -78,7 +78,7 @@ const translations = {
         bedroomsTitle: "Soveværelser",
         bedroomsText: "Soveværelserne er ryddet op og gjort klar til jer. Alle senge er gjort med rent sengetøj.",
         jacuzziTitle: "🛁 Jacuzzi",
-        jacuzziIntro: "Vi tager godt vare på jacuzzien 🛁 for at sikre en hyggelig oplevelse for jer. Her er sidste vedligeholdelse: 🔧",
+        jacuzziIntro: "Vi tager godt vare på jacuzzien for at sikre en hyggelig oplevelse for jer. Her er sidste vedligeholdelse:",
         jacuzziList: [
             "Vandskifte: Sidst udført 15. december 2024",
             "Kvalitetstjek (klorindhold): Sidst udført 20. december 2024"
@@ -139,7 +139,7 @@ const translations = {
         bedroomsTitle: "Schlafzimmer",
         bedroomsText: "Die Schlafzimmer sind aufgeräumt und für Sie vorbereitet. Alle Betten sind mit frischer Bettwäsche bezogen.",
         jacuzziTitle: "🛁 Jacuzzi",
-        jacuzziIntro: "Wir kümmern uns gut um den Jacuzzi 🛁, um Ihnen ein angenehmes Erlebnis zu garantieren. Hier ist die letzte Wartung: 🔧",
+        jacuzziIntro: "Wir kümmern uns gut um den Jacuzzi, um Ihnen ein angenehmes Erlebnis zu garantieren. Hier ist die letzte Wartung:",
         jacuzziList: [
             "Wasserwechsel: Zuletzt durchgeführt am 15. Dezember 2024",
             "Qualitätsprüfung (Chlorgehalt): Zuletzt durchgeführt am 20. Dezember 2024"
@@ -201,7 +201,7 @@ const translations = {
         bedroomsTitle: "Bedrooms",
         bedroomsText: "The bedrooms are tidied up and prepared for you. All beds are made with clean linens.",
         jacuzziTitle: "🛁 Jacuzzi",
-        jacuzziIntro: "We take good care of the jacuzzi 🛁 to ensure a pleasant experience for you. Here is the latest maintenance: 🔧",
+        jacuzziIntro: "We take good care of the jacuzzi to ensure a pleasant experience for you. Here is the latest maintenance:",
         jacuzziList: [
             "Water change: Last performed December 15, 2024",
             "Quality check (chlorine content): Last performed December 20, 2024"
