@@ -68,6 +68,7 @@ const translations = {
         waterToc: "💧 Vandforsyning",
         bedroomsToc: "🛏️ Soveværelser",
         jacuzziToc: "🛁 Jacuzzi",
+        climateToc: "🌡️ Klima",
         fireplaceToc: "🔥 Peis",
         saunaToc: "🧖 Badstue",
         wasteToc: "♻️ Affaldssortering",
@@ -93,7 +94,7 @@ const translations = {
             "💊 Før afrejse tilsæt 1 klor tablet i den blå klorbeholder eller ekstra ved behov."
         ],
         fireplaceTitle: "🔥 Peis",
-        fireplaceIntro: "Peisen kan brukes til å varme opp hytta. Sørg for at det ikke er brannfare, og slukk alltid peisen før dere forlater stedet.",
+        fireplaceIntro: "Peisen kan bruges til at varme hytten op. Sørg for, at der ikke er brandfare, og sluk altid peisen, før I forlader stedet.",
         fireplaceSteps: [
             "🪵 Læg 3 stk brændeknuder ind og sæt spjældet til maks for at starte.",
             "🔥 Når der er god ild, juster ned til under middel med døren helt lukket.",
@@ -101,7 +102,7 @@ const translations = {
             "🪵 Sæt brændeknuder stående for den bedst mulige ild."
         ],
         saunaTitle: "🧖 Badstue",
-        saunaText: "Badstuen er tilgjengelig for avslapning. Følg sikkerhetsinstruksjonene og ikke bruk den uten tilsyn.",
+        saunaText: "Badstuen er tilgængelig for afslapning. Følg sikkerhedsinstruktionerne og brug den ikke uden opsyn.",
         departureTitle: "📋 Ved Afrejse",
         departureText: "Venligst gør følgende før I forlader hytten:",
         departureOutro: "Håber at I har haft et hyggeligt ophold!",
@@ -130,6 +131,7 @@ const translations = {
         waterToc: "💧 Wasserversorgung",
         bedroomsToc: "🛏️ Schlafzimmer",
         jacuzziToc: "🛁 Jacuzzi",
+        climateToc: "🌡️ Klima",
         fireplaceToc: "🔥 Kamin",
         saunaToc: "🧖 Sauna",
         wasteToc: "♻️ Abfallsortierung",
@@ -193,6 +195,7 @@ const translations = {
         waterToc: "💧 Water Supply",
         bedroomsToc: "🛏️ Bedrooms",
         jacuzziToc: "🛁 Jacuzzi",
+        climateToc: "🌡️ Climate",
         fireplaceToc: "🔥 Fireplace",
         saunaToc: "🧖 Sauna",
         wasteToc: "♻️ Waste Sorting",
