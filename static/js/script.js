@@ -66,7 +66,11 @@ const translations = {
         climateAdjustTemp: "Hvis dere ønsker kan dere justere innetemperaturen på air condition med pluss minus.",
         climateHeatText: "Varme på hytta er digitalt styrt og er satt til komforttemperatur. Om dere synes det er kaldt kan dere gi beskjed så justerer vi opp temperaturen for dere.",
         climateAlt1: "Temperature bathroom",
-        climateAlt2: "AI condition controller"
+        climateAlt2: "AI condition controller",
+        fireplaceImagesText: "De viser spjeldvinkel under opptenning:",
+        fireplaceIntroAlt: "How to place wood in oven",
+        fireplaceAlt1: "Full open",
+        fireplaceAlt2: "After fire in oven"
     },
     da: {
         title: "Velkommen til Rytterveien 166",
@@ -136,7 +140,11 @@ const translations = {
         climateAdjustTemp: "Hvis I ønsker kan I justere indetemperaturen på air condition med plus minus.",
         climateHeatText: "Varme på hytten er digitalt styret og er sat til komforttemperatur. Hvis I synes det er koldt kan I give besked så justerer vi temperaturen op for jer.",
         climateAlt1: "Temperatur badeværelse",
-        climateAlt2: "Luft condition controller"
+        climateAlt2: "Luft condition controller",
+        fireplaceImagesText: "De viser spjeldvinkel under optænding:",
+        fireplaceIntroAlt: "Sådan placeres træ i ovnen",
+        fireplaceAlt1: "Fuld åben",
+        fireplaceAlt2: "Efter ild i ovnen"
     },
     de: {
         title: "Willkommen in der Rytterveien 166",
@@ -207,7 +215,11 @@ const translations = {
         climateAdjustTemp: "Falls gewünscht können Sie die Innentemperatur der Klimaanlage mit Plus und Minus anpassen.",
         climateHeatText: "Die Heizung in der Hütte ist digital gesteuert und auf Komforttemperatur eingestellt. Wenn Ihnen kalt ist, lassen Sie es uns wissen, dann stellen wir die Temperatur höher ein.",
         climateAlt1: "Temperatur Badezimmer",
-        climateAlt2: "Klimaanlagen-Steuerung"
+        climateAlt2: "Klimaanlagen-Steuerung",
+        fireplaceImagesText: "Sie zeigen die Spjeldwinkel beim Anzünden:",
+        fireplaceIntroAlt: "Wie man Holz im Ofen platziert",
+        fireplaceAlt1: "Voll geöffnet",
+        fireplaceAlt2: "Nach Feuer im Ofen"
     },
     en: {
         title: "Welcome to Rytterveien 166",
@@ -277,7 +289,11 @@ const translations = {
         climateAdjustTemp: "If you wish, you can adjust the indoor temperature of the air conditioner with plus and minus.",
         climateHeatText: "The heating in the cabin is digitally controlled and set to comfort temperature. If you feel cold, let us know and we will adjust the temperature up for you.",
         climateAlt1: "Temperature bathroom",
-        climateAlt2: "Air condition controller"
+        climateAlt2: "Air condition controller",
+        fireplaceImagesText: "They show damper angle during ignition:",
+        fireplaceIntroAlt: "How to place wood in oven",
+        fireplaceAlt1: "Full open",
+        fireplaceAlt2: "After fire in oven"
     }
 };
 
@@ -373,6 +389,14 @@ function updateContent(lang = 'no') {
     document.querySelector('#climate-adjust-temp').textContent = trans.climateAdjustTemp;
     document.querySelector('#climate-img2').alt = trans.climateAlt2;
     document.querySelector('#climate-heat-text').textContent = trans.climateHeatText;
+    const fireplaceImagesText = document.querySelector('#fireplace-images-text');
+    if (fireplaceImagesText) fireplaceImagesText.textContent = trans.fireplaceImagesText;
+    const fireplaceImg1 = document.querySelector('#fireplace-img1');
+    if (fireplaceImg1) fireplaceImg1.alt = trans.fireplaceAlt1;
+    const fireplaceImg2 = document.querySelector('#fireplace-img2');
+    if (fireplaceImg2) fireplaceImg2.alt = trans.fireplaceAlt2;
+    const fireplaceImg0 = document.querySelector('#fireplace-img0');
+    if (fireplaceImg0) fireplaceImg0.alt = trans.fireplaceIntroAlt;
 }
 
 function getWeatherIcon(symbol) {
