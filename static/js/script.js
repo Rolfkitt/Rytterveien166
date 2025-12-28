@@ -16,7 +16,7 @@ const translations = {
         waterTitle: "💧 Vannforsyning",
         waterText: "Vannkrana er åpen og vannet er tilgjengelig.",
         bedroomsTitle: "🛏️ Soverom",
-        bedroomsText: "Soverommene er ryddet opp og klargjort for dere. Alle senger er gjort med rent sengetøy.",
+        bedroomsText: "Soverommet er ryddet og klargjort med rent sengetøy og håndklær.",
         jacuzziTitle: "🛁 Jacuzzi",
         jacuzziIntro: "Vi tar godt vare på jacuzzien for å sikre en hyggelig opplevelse for våre gjester. Her er siste vedlikehold:",
         jacuzziList: [
@@ -90,7 +90,7 @@ const translations = {
         waterTitle: "Vandforsyning",
         waterText: "Vandhanen er åben og vandet er tilgængeligt.",
         bedroomsTitle: "Soveværelser",
-        bedroomsText: "Soveværelserne er ryddet op og gjort klar til jer. Alle senge er gjort med rent sengetøj.",
+        bedroomsText: "Soveværelset er ryddet og gjort klar med rent sengetøj og håndklæder.",
         jacuzziTitle: "🛁 Jacuzzi",
         jacuzziIntro: "Vi tager godt vare på jacuzzien for at sikre en hyggelig oplevelse for vores gæster. Her er sidste vedligeholdelse:",
         jacuzziList: [
@@ -164,7 +164,7 @@ const translations = {
         waterTitle: "Wasserversorgung",
         waterText: "Der Wasserhahn ist geöffnet und das Wasser ist verfügbar.",
         bedroomsTitle: "Schlafzimmer",
-        bedroomsText: "Die Schlafzimmer sind aufgeräumt und für Sie vorbereitet. Alle Betten sind mit frischer Bettwäsche bezogen.",
+        bedroomsText: "Das Schlafzimmer ist aufgeräumt und mit frischer Bettwäsche und Handtüchern vorbereitet.",
         jacuzziTitle: "🛁 Jacuzzi",
         jacuzziIntro: "Wir kümmern uns gut um den Jacuzzi, um unseren Gästen ein angenehmes Erlebnis zu garantieren. Hier ist die letzte Wartung:",
         jacuzziList: [
@@ -239,7 +239,7 @@ const translations = {
         waterTitle: "Water Supply",
         waterText: "The water tap is open and the water is available.",
         bedroomsTitle: "Bedrooms",
-        bedroomsText: "The bedrooms are tidied up and prepared for you. All beds are made with clean linens.",
+        bedroomsText: "The bedroom is tidied and prepared with clean linens and towels.",
         jacuzziTitle: "🛁 Jacuzzi",
         jacuzziIntro: "We take good care of the jacuzzi to ensure a pleasant experience for our guests. Here is the latest maintenance:",
         jacuzziList: [
