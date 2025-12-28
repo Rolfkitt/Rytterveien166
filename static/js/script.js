@@ -20,8 +20,8 @@ const translations = {
         jacuzziTitle: "🛁 Jacuzzi",
         jacuzziIntro: "Vi tar godt vare på jacuzzien for å sikre en hyggelig opplevelse for dere. Her er siste vedlikehold:",
         jacuzziList: [
-            "Vannskifte: Sist utført 15. desember 2024",
-            "Kvalitetssjekk (klorinnhold): Sist utført 20. desember 2024"
+            "Vannskifte: Sist utført 26. desember 2025",
+            "Kvalitetssjekk (klorinnhold): Sist utført 26. desember 2025"
         ],
         jacuzziAdvice: [
             "🌡️ Sett temperaturen til 38 grader ved ankomst ved å trykke på displayet på jacuzzien.",
@@ -81,8 +81,8 @@ const translations = {
         jacuzziTitle: "🛁 Jacuzzi",
         jacuzziIntro: "Vi tager godt vare på jacuzzien for at sikre en hyggelig oplevelse for jer. Her er sidste vedligeholdelse:",
         jacuzziList: [
-            "Vandskifte: Sidst udført 15. december 2024",
-            "Kvalitetstjek (klorindhold): Sidst udført 20. december 2024"
+            "Vandskifte: Sidst udført 26. december 2025",
+            "Kvalitetstjek (klorindhold): Sidst udført 26. december 2025"
         ],
         jacuzziAdvice: [
             "🌡️ Sæt temperaturen til 38 grader ved ankomst ved at trykke på displayet på jacuzzien.",
@@ -142,8 +142,8 @@ const translations = {
         jacuzziTitle: "🛁 Jacuzzi",
         jacuzziIntro: "Wir kümmern uns gut um den Jacuzzi, um Ihnen ein angenehmes Erlebnis zu garantieren. Hier ist die letzte Wartung:",
         jacuzziList: [
-            "Wasserwechsel: Zuletzt durchgeführt am 15. Dezember 2024",
-            "Qualitätsprüfung (Chlorgehalt): Zuletzt durchgeführt am 20. Dezember 2024"
+            "Wasserwechsel: Zuletzt durchgeführt am 26. Dezember 2025",
+            "Qualitätsprüfung (Chlorgehalt): Zuletzt durchgeführt am 26. Dezember 2025"
         ],
         jacuzziAdvice: [
             "🌡️ Stellen Sie die Temperatur bei Ankunft auf 38 Grad ein, indem Sie auf das Display des Jacuzzis drücken.",
@@ -204,8 +204,8 @@ const translations = {
         jacuzziTitle: "🛁 Jacuzzi",
         jacuzziIntro: "We take good care of the jacuzzi to ensure a pleasant experience for you. Here is the latest maintenance:",
         jacuzziList: [
-            "Water change: Last performed December 15, 2024",
-            "Quality check (chlorine content): Last performed December 20, 2024"
+            "Water change: Last performed December 26, 2025",
+            "Quality check (chlorine content): Last performed December 26, 2025"
         ],
         jacuzziAdvice: [
             "🌡️ Set the temperature to 38 degrees upon arrival by pressing the display on the jacuzzi.",
