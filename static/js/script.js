@@ -34,10 +34,9 @@ const translations = {
         fireplaceTitle: "🔥 Peis",
         fireplaceIntro: "Peisen kan brukes til å varme opp hytta. Sørg for at det ikke er brannfare, og slukk alltid peisen før dere forlater stedet.",
         fireplaceSteps: [
-            "🪵 Legg inn 3 stk vedkubber og sett spjeld til maks for å starte.",
+            "🪵 Legg inn 3 stk vedkubber stående og sett spjeld til maks for å starte.",
             "🔥 Når det er god fyr, juster ned til under middels med døren helt lukket.",
-            "💨 Det er veldig god trekk i denne ovnen.",
-            "🪵 Sett vedkubber stående for beste mulig fyr."
+            "💨 Det er veldig god trekk i denne ovnen."
         ],
         saunaTitle: "🧖 Badstue",
         saunaText: "Badstuen er tilgjengelig for avslapning. Følg sikkerhetsinstruksjonene og ikke bruk den uten tilsyn. Bryter til venstre bestemmer Temperaturen, min til max. Bryter til høyre bestemmer timer 1-4 som er merket med hvit. 1-8 er antall timer man skal utsette før sauna starter opp.",
@@ -108,10 +107,9 @@ const translations = {
         fireplaceTitle: "🔥 Peis",
         fireplaceIntro: "Peisen kan bruges til at varme hytten op. Sørg for, at der ikke er brandfare, og sluk altid peisen, før I forlader stedet.",
         fireplaceSteps: [
-            "🪵 Læg 3 stk brændeknuder ind og sæt spjældet til maks for at starte.",
+            "🪵 Læg 3 stk brændeknuder stående ind og sæt spjældet til maks for at starte.",
             "🔥 Når der er god ild, juster ned til under middel med døren helt lukket.",
-            "💨 Der er meget god træk i denne ovn.",
-            "🪵 Sæt brændeknuder stående for den bedst mulige ild."
+            "💨 Der er meget god træk i denne ovn."
         ],
         saunaTitle: "🧖 Badstue",
         saunaText: "Badstuen er tilgængelig for afslapning. Følg sikkerhedsinstruktionerne og brug den ikke uden opsyn. Bryteren til venstre bestemmer temperaturen, min til max. Bryteren til høyre bestemmer timer 1-4 som er markeret med hvid. 1-8 er antallet timer man skal udsætte før saunaen starter op.",
@@ -182,10 +180,9 @@ const translations = {
         fireplaceTitle: "🔥 Kamin",
         fireplaceIntro: "Der Kamin kann verwendet werden, um die Hütte zu heizen. Stellen Sie sicher, dass keine Brandgefahr besteht, und löschen Sie den Kamin immer, bevor Sie den Ort verlassen.",
         fireplaceSteps: [
-            "🪵 Legen Sie 3 Holzscheite ein und stellen Sie die Klappe auf Maximum, um zu starten.",
+            "🪵 Legen Sie 3 Holzscheite stehend ein und stellen Sie die Klappe auf Maximum, um zu starten.",
             "🔥 Wenn das Feuer gut brennt, drehen Sie auf unter Mittel herunter, mit der Tür vollständig geschlossen.",
-            "💨 Es gibt einen sehr guten Zug in diesem Ofen.",
-            "🪵 Platzieren Sie die Holzscheite stehend für das beste mögliche Feuer."
+            "💨 Es gibt einen sehr guten Zug in diesem Ofen."
         ],
         saunaTitle: "🧖 Sauna",
         saunaText: "Die Sauna steht zur Entspannung zur Verfügung. Befolgen Sie die Sicherheitsanweisungen und verwenden Sie sie nicht ohne Aufsicht. Der Schalter links bestimmt die Temperatur, min bis max. Der Schalter rechts bestimmt die Timer 1-4, die mit Weiß markiert sind. 1-8 ist die Anzahl Stunden, die man verschieben soll, bevor die Sauna startet.",
@@ -257,10 +254,9 @@ const translations = {
         fireplaceTitle: "🔥 Fireplace",
         fireplaceIntro: "The fireplace can be used to heat the cabin. Ensure there is no fire hazard, and always extinguish the fireplace before leaving.",
         fireplaceSteps: [
-            "🪵 Put in 3 logs and set the damper to maximum to start.",
+            "🪵 Put in 3 logs standing and set the damper to maximum to start.",
             "🔥 When there is a good fire, adjust down to below medium with the door completely closed.",
-            "💨 There is very good draught in this stove.",
-            "🪵 Place the logs standing for the best possible fire."
+            "💨 There is very good draught in this stove."
         ],
         saunaTitle: "🧖 Sauna",
         saunaText: "The sauna is available for relaxation. Follow safety instructions and do not use it unsupervised. The switch on the left determines the temperature, min to max. The switch on the right determines the timer 1-4 marked with white. 1-8 is the number of hours to delay before the sauna starts.",
