@@ -6,6 +6,7 @@ const translations = {
         waterToc: "💧 Vannforsyning",
         bedroomsToc: "🛏️ Soverom",
         jacuzziToc: "🛁 Jacuzzi",
+        climateToc: "🌡️ Klima",
         fireplaceToc: "🔥 Peis",
         saunaToc: "🧖 Badstue",
         wasteToc: "♻️ Søppelsortering",
@@ -255,6 +256,7 @@ function updateContent(lang = 'no') {
     document.querySelector('#toc a[href="#water"]').textContent = trans.waterToc;
     document.querySelector('#toc a[href="#bedrooms"]').textContent = trans.bedroomsToc;
     document.querySelector('#toc a[href="#jacuzzi"]').textContent = trans.jacuzziToc;
+    document.querySelector('#toc a[href="#climate"]').textContent = trans.climateToc;
     document.querySelector('#toc a[href="#fireplace"]').textContent = trans.fireplaceToc;
     document.querySelector('#toc a[href="#sauna"]').textContent = trans.saunaToc;
     document.querySelector('#toc a[href="#waste"]').textContent = trans.wasteToc;
