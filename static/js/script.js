@@ -28,7 +28,7 @@ const translations = {
             "🔋 Husk å sette lokket på jacuzzien når det ikke er i bruk for å spare energi!",
             "🚿 Før bruk tar alle som skal bruke jacuzzien en kjapp dusj for et hyggelig og rent miljø.",
             "💊 Etter bruk settes 1 stk klor tablett oppi for å holde vannet rent.",
-            "💊 Før avreise tilsett 1 klortablett i den blå klorbeholder eller ekstra ved behov."
+            "💊 Før avreise, pass på at det er en langtidsvirkende klortablett i den blå beholderen som er oppi boblebadet."
         ],
         fireplaceTitle: "🔥 Peis",
         fireplaceIntro: "Peisen kan brukes til å varme opp hytta. Sørg for at det ikke er brannfare, og slukk alltid peisen før dere forlater stedet.",
@@ -91,7 +91,7 @@ const translations = {
             "🔋 Husk at sætte låget på jacuzzien, når det ikke er i brug for at spare energi!",
             "🚿 Før brug tager alle som skal bruge jacuzzien et hurtigt bad for et hyggeligt og rent miljø.",
             "💊 Efter brug sættes 1 stk klor tablet op i for at holde vandet rent.",
-            "💊 Før afrejse tilsæt 1 klor tablet i den blå klorbeholder eller ekstra ved behov."
+            "💊 Før afrejse, sørg for at der er en langtidsvirkende klor tablet i den blå beholder, som er oppe i boblebadet."
         ],
         fireplaceTitle: "🔥 Peis",
         fireplaceIntro: "Peisen kan bruges til at varme hytten op. Sørg for, at der ikke er brandfare, og sluk altid peisen, før I forlader stedet.",
@@ -154,7 +154,7 @@ const translations = {
             "🔋 Denken Sie daran, den Deckel auf den Jacuzzi zu legen, wenn er nicht in Gebrauch ist, um Energie zu sparen!",
             "🚿 Vor der Nutzung nehmen alle, die den Jacuzzi benutzen möchten, eine kurze Dusche für eine angenehme und saubere Umgebung.",
             "💊 Nach der Nutzung 1 Chlor-Tablette hineingeben, um das Wasser sauber zu halten.",
-            "💊 Vor Abreise 1 Chlor-Tablette in den blauen Chlorbehälter geben oder extra bei Bedarf."
+            "💊 Vor Abreise, achten Sie darauf, dass eine langwirksame Chlor-Tablette im blauen Behälter ist, der sich im Whirlpool befindet."
         ],
         fireplaceTitle: "🔥 Kamin",
         fireplaceIntro: "Der Kamin kann verwendet werden, um die Hütte zu heizen. Stellen Sie sicher, dass keine Brandgefahr besteht, und löschen Sie den Kamin immer, bevor Sie den Ort verlassen.",
@@ -218,7 +218,7 @@ const translations = {
             "🔋 Remember to put the lid on the jacuzzi when not in use to save energy!",
             "🚿 Before use, everyone who wants to use the jacuzzi takes a quick shower for a pleasant and clean environment.",
             "💊 After use, add 1 chlorine tablet to keep the water clean.",
-            "💊 Before departure, add 1 chlorine tablet to the blue chlorine container or extra as needed."
+            "💊 Before departure, ensure there is a long-acting chlorine tablet in the blue container that is inside the jacuzzi."
         ],
         fireplaceTitle: "🔥 Fireplace",
         fireplaceIntro: "The fireplace can be used to heat the cabin. Ensure there is no fire hazard, and always extinguish the fireplace before leaving.",
