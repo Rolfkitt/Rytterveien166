@@ -267,7 +267,8 @@ function updateContent(lang = 'no') {
     document.querySelector('#bedrooms h2').textContent = trans.bedroomsTitle;
     document.querySelector('#bedrooms p').textContent = trans.bedroomsText;
     document.querySelector('#jacuzzi h2').textContent = trans.jacuzziTitle;
-    document.querySelector('#jacuzzi-intro').textContent = trans.jacuzziIntro;
+    const jacuzziIntro = document.querySelector('#jacuzzi-intro');
+    if (jacuzziIntro) jacuzziIntro.textContent = trans.jacuzziIntro;
     const jacuzziList = document.querySelector('#jacuzzi-list');
     jacuzziList.innerHTML = '';
     trans.jacuzziList.forEach(item => {
@@ -285,7 +286,8 @@ function updateContent(lang = 'no') {
         });
     }
     document.querySelector('#fireplace h2').textContent = trans.fireplaceTitle;
-    document.querySelector('#fireplace-intro').textContent = trans.fireplaceIntro;
+    const fireplaceIntro = document.querySelector('#fireplace-intro');
+    if (fireplaceIntro) fireplaceIntro.textContent = trans.fireplaceIntro;
     const fireplaceSteps = document.querySelector('#fireplace-steps');
     fireplaceSteps.innerHTML = '';
     if (trans.fireplaceSteps) {
@@ -296,7 +298,8 @@ function updateContent(lang = 'no') {
         });
     }
     document.querySelector('#sauna h2').textContent = trans.saunaTitle;
-    document.querySelector('#sauna p').textContent = trans.saunaText;
+    const saunaP = document.querySelector('#sauna p');
+    if (saunaP) saunaP.textContent = trans.saunaText;
     document.querySelector('#departure h2').textContent = trans.departureTitle;
     document.querySelector('#departure p').textContent = trans.departureText;
     const list = document.querySelector('#departure ul');
