@@ -39,7 +39,7 @@ const translations = {
             "🪵 Sett vedkubber stående for beste mulig fyr."
         ],
         saunaTitle: "🧖 Badstue",
-        saunaText: "Badstuen er tilgjengelig for avslapning. Følg sikkerhetsinstruksjonene og ikke bruk den uten tilsyn.",
+        saunaText: "Badstuen er tilgjengelig for avslapning. Følg sikkerhetsinstruksjonene og ikke bruk den uten tilsyn. Bryter til venstre bestemmer Temperaturen, min til max. Bryter til høyre bestemmer timer 1-4 som er merket med hvit. 1-8 er antall timer man skal utsette før sauna starter opp.",
         departureTitle: "📋 Ved Avreise",
         departureText: "Vi setter stor pris på om dere kan gjøre følgende før dere forlater hytta:",
         departureOutro: "Håper at dere har hatt et hyggelig opphold!",
@@ -102,7 +102,7 @@ const translations = {
             "🪵 Sæt brændeknuder stående for den bedst mulige ild."
         ],
         saunaTitle: "🧖 Badstue",
-        saunaText: "Badstuen er tilgængelig for afslapning. Følg sikkerhedsinstruktionerne og brug den ikke uden opsyn.",
+        saunaText: "Badstuen er tilgængelig for afslapning. Følg sikkerhedsinstruktionerne og brug den ikke uden opsyn. Bryteren til venstre bestemmer temperaturen, min til max. Bryteren til høyre bestemmer timer 1-4 som er markeret med hvid. 1-8 er antallet timer man skal udsætte før saunaen starter op.",
         departureTitle: "📋 Ved Afrejse",
         departureText: "Venligst gør følgende før I forlader hytten:",
         departureOutro: "Håber at I har haft et hyggeligt ophold!",
@@ -165,7 +165,7 @@ const translations = {
             "🪵 Platzieren Sie die Holzscheite stehend für das beste mögliche Feuer."
         ],
         saunaTitle: "🧖 Sauna",
-        saunaText: "Die Sauna steht zur Entspannung zur Verfügung. Befolgen Sie die Sicherheitsanweisungen und verwenden Sie sie nicht ohne Aufsicht.",
+        saunaText: "Die Sauna steht zur Entspannung zur Verfügung. Befolgen Sie die Sicherheitsanweisungen und verwenden Sie sie nicht ohne Aufsicht. Der Schalter links bestimmt die Temperatur, min bis max. Der Schalter rechts bestimmt die Timer 1-4, die mit Weiß markiert sind. 1-8 ist die Anzahl Stunden, die man verschieben soll, bevor die Sauna startet.",
 
         departureTitle: "📋 Bei Abreise",
         departureText: "Bitte tun Sie Folgendes, bevor Sie die Hütte verlassen:",
@@ -229,7 +229,7 @@ const translations = {
             "🪵 Place the logs standing for the best possible fire."
         ],
         saunaTitle: "🧖 Sauna",
-        saunaText: "The sauna is available for relaxation. Follow safety instructions and do not use it unsupervised.",
+        saunaText: "The sauna is available for relaxation. Follow safety instructions and do not use it unsupervised. The switch on the left determines the temperature, min to max. The switch on the right determines the timer 1-4 marked with white. 1-8 is the number of hours to delay before the sauna starts.",
         departureTitle: "📋 Upon Departure",
         departureText: "Please do the following before leaving the cabin:",
         departureOutro: "We hope you had a pleasant stay!",
