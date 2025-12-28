@@ -30,6 +30,7 @@ const translations = {
             "💊 Etter bruk settes 1 stk klor tablett oppi for å holde vannet rent.",
             "💊 Før avreise, pass på at det er en langtidsvirkende klortablett i den blå beholderen som er oppi boblebadet."
         ],
+        jacuzziImagesText: "Bilder av hvordan spabadet festes:",
         fireplaceTitle: "🔥 Peis",
         fireplaceIntro: "Peisen kan brukes til å varme opp hytta. Sørg for at det ikke er brannfare, og slukk alltid peisen før dere forlater stedet.",
         fireplaceSteps: [
@@ -93,6 +94,7 @@ const translations = {
             "💊 Efter brug sættes 1 stk klor tablet op i for at holde vandet rent.",
             "💊 Før afrejse, sørg for at der er en langtidsvirkende klor tablet i den blå beholder, som er oppe i boblebadet."
         ],
+        jacuzziImagesText: "Billeder af hvordan spabadet fastgøres:",
         fireplaceTitle: "🔥 Peis",
         fireplaceIntro: "Peisen kan bruges til at varme hytten op. Sørg for, at der ikke er brandfare, og sluk altid peisen, før I forlader stedet.",
         fireplaceSteps: [
@@ -156,6 +158,7 @@ const translations = {
             "💊 Nach der Nutzung 1 Chlor-Tablette hineingeben, um das Wasser sauber zu halten.",
             "💊 Vor Abreise, achten Sie darauf, dass eine langwirksame Chlor-Tablette im blauen Behälter ist, der sich im Whirlpool befindet."
         ],
+        jacuzziImagesText: "Bilder davon, wie das Spa befestigt wird:",
         fireplaceTitle: "🔥 Kamin",
         fireplaceIntro: "Der Kamin kann verwendet werden, um die Hütte zu heizen. Stellen Sie sicher, dass keine Brandgefahr besteht, und löschen Sie den Kamin immer, bevor Sie den Ort verlassen.",
         fireplaceSteps: [
@@ -220,6 +223,7 @@ const translations = {
             "💊 After use, add 1 chlorine tablet to keep the water clean.",
             "💊 Before departure, ensure there is a long-acting chlorine tablet in the blue container that is inside the jacuzzi."
         ],
+        jacuzziImagesText: "Pictures of how the hot tub is secured:",
         fireplaceTitle: "🔥 Fireplace",
         fireplaceIntro: "The fireplace can be used to heat the cabin. Ensure there is no fire hazard, and always extinguish the fireplace before leaving.",
         fireplaceSteps: [
@@ -294,6 +298,8 @@ function updateContent(lang = 'no') {
             jacuzziAdvice.appendChild(li);
         });
     }
+    const jacuzziImagesText = document.querySelector('#jacuzzi-images-text');
+    if (jacuzziImagesText) jacuzziImagesText.textContent = trans.jacuzziImagesText;
     document.querySelector('#fireplace h2').textContent = trans.fireplaceTitle;
     const fireplaceIntro = document.querySelector('#fireplace-intro');
     if (fireplaceIntro) fireplaceIntro.textContent = trans.fireplaceIntro;
