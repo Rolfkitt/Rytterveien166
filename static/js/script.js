@@ -61,6 +61,12 @@ const translations = {
         weatherToc: "🌤️ Værmelding",
         weatherTitle: "🌤️ Værmelding",
         weatherIntro: "Værmeldingen oppdateres automatisk og viser været for Gautefall-området.",
+        climateTitle: "🌡️ Klima",
+        climateCableTemp: "Anbefalt temperatur på varmekabel på bad: 26-27°C.",
+        climateAdjustTemp: "Hvis dere ønsker kan dere justere innetemperaturen på air condition med pluss minus.",
+        climateHeatText: "Varme på hytta er digitalt styrt og er satt til komforttemperatur. Om dere synes det er kaldt kan dere gi beskjed så justerer vi opp temperaturen for dere.",
+        climateAlt1: "Temperature bathroom",
+        climateAlt2: "AI condition controller"
     },
     da: {
         title: "Velkommen til Rytterveien 166",
@@ -125,6 +131,12 @@ const translations = {
         weatherToc: "🌤️ Vejrudsigt",
         weatherTitle: "🌤️ Vejrudsigt",
         weatherIntro: "Her er vejrudsigten for Gautefall de næste 2 dage.",
+        climateTitle: "🌡️ Klima",
+        climateCableTemp: "Anbefalet temperatur på varmekabel på badeværelse: 26-27°C.",
+        climateAdjustTemp: "Hvis I ønsker kan I justere indetemperaturen på air condition med plus minus.",
+        climateHeatText: "Varme på hytten er digitalt styret og er sat til komforttemperatur. Hvis I synes det er koldt kan I give besked så justerer vi temperaturen op for jer.",
+        climateAlt1: "Temperatur badeværelse",
+        climateAlt2: "Luft condition controller"
     },
     de: {
         title: "Willkommen in der Rytterveien 166",
@@ -190,6 +202,12 @@ const translations = {
         weatherToc: "🌤️ Wettervorhersage",
         weatherTitle: "🌤️ Wettervorhersage",
         weatherIntro: "Hier ist die Wettervorhersage für Gautefall für die nächsten 2 Tage.",
+        climateTitle: "🌡️ Klima",
+        climateCableTemp: "Empfohlene Temperatur für das Heizkabel im Bad: 26-27°C.",
+        climateAdjustTemp: "Falls gewünscht können Sie die Innentemperatur der Klimaanlage mit Plus und Minus anpassen.",
+        climateHeatText: "Die Heizung in der Hütte ist digital gesteuert und auf Komforttemperatur eingestellt. Wenn Ihnen kalt ist, lassen Sie es uns wissen, dann stellen wir die Temperatur höher ein.",
+        climateAlt1: "Temperatur Badezimmer",
+        climateAlt2: "Klimaanlagen-Steuerung"
     },
     en: {
         title: "Welcome to Rytterveien 166",
@@ -254,6 +272,12 @@ const translations = {
         weatherToc: "🌤️ Weather Forecast",
         weatherTitle: "🌤️ Weather Forecast",
         weatherIntro: "Here is the weather forecast for Gautefall for the next 2 days.",
+        climateTitle: "🌡️ Climate",
+        climateCableTemp: "Recommended temperature for heating cable in bathroom: 26-27°C.",
+        climateAdjustTemp: "If you wish, you can adjust the indoor temperature of the air conditioner with plus and minus.",
+        climateHeatText: "The heating in the cabin is digitally controlled and set to comfort temperature. If you feel cold, let us know and we will adjust the temperature up for you.",
+        climateAlt1: "Temperature bathroom",
+        climateAlt2: "Air condition controller"
     }
 };
 
@@ -343,6 +367,12 @@ function updateContent(lang = 'no') {
     document.querySelector('#cafe-intro').textContent = trans.cafeIntro;
     document.querySelector('#weather h2').textContent = trans.weatherTitle;
     document.querySelector('#weather-intro').textContent = trans.weatherIntro + " (Oppdatert: " + new Date().toLocaleString(locale) + ")";
+    document.querySelector('#climate-title').textContent = trans.climateTitle;
+    document.querySelector('#climate-cable-temp').textContent = trans.climateCableTemp;
+    document.querySelector('#climate-img1').alt = trans.climateAlt1;
+    document.querySelector('#climate-adjust-temp').textContent = trans.climateAdjustTemp;
+    document.querySelector('#climate-img2').alt = trans.climateAlt2;
+    document.querySelector('#climate-heat-text').textContent = trans.climateHeatText;
 }
 
 function getWeatherIcon(symbol) {
