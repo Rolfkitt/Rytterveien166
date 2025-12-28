@@ -27,7 +27,8 @@ const translations = {
             "🌡️ Sett temperaturen til 38 grader ved ankomst ved å trykke på displayet på jacuzzien.",
             "🔋 Husk å sette lokket på jacuzzien når det ikke er i bruk for å spare energi!",
             "🚿 Før bruk tar alle som skal bruke jacuzzien en kjapp dusj for et hyggelig og rent miljø.",
-            "💊 Etter bruk settes 1 stk klor tablett oppi for å holde vannet rent."
+            "💊 Klor tablet skal kun tilsettes ved behov.",
+            "💊 Ved avreise settes 1 stk klortablett i den blå klorbeholderen for å opprettholde klornivået."
         ],
         fireplaceTitle: "🔥 Peis",
         fireplaceIntro: "Peisen kan brukes til å varme opp hytta. Sørg for at det ikke er brannfare, og slukk alltid peisen før dere forlater stedet.",
@@ -88,7 +89,8 @@ const translations = {
             "🌡️ Sæt temperaturen til 38 grader ved ankomst ved at trykke på displayet på jacuzzien.",
             "🔋 Husk at sætte låget på jacuzzien, når det ikke er i brug for at spare energi!",
             "🚿 Før brug tager alle som skal bruge jacuzzien et hurtigt bad for et hyggeligt og rent miljø.",
-            "💊 Efter brug sættes 1 stk klor tablet op i for at holde vandet rent."
+            "💊 Klor tablet skal kun tilsættes ved behov.",
+            "💊 Ved afrejse sættes 1 stk klortablet i den blå klorbeholder for at opretholde klorniveauet."
         ],
         fireplaceTitle: "🔥 Peis",
         fireplaceIntro: "Peisen kan brukes til å varme opp hytta. Sørg for at det ikke er brannfare, og slukk alltid peisen før dere forlater stedet.",
@@ -149,7 +151,8 @@ const translations = {
             "🌡️ Stellen Sie die Temperatur bei Ankunft auf 38 Grad ein, indem Sie auf das Display des Jacuzzis drücken.",
             "🔋 Denken Sie daran, den Deckel auf den Jacuzzi zu legen, wenn er nicht in Gebrauch ist, um Energie zu sparen!",
             "🚿 Vor der Nutzung nehmen alle, die den Jacuzzi benutzen möchten, eine kurze Dusche für eine angenehme und saubere Umgebung.",
-            "💊 Nach der Nutzung 1 Chlor-Tablette hineingeben, um das Wasser sauber zu halten."
+            "💊 Chlor-Tablette soll nur bei Bedarf hinzugefügt werden.",
+            "💊 Bei Abreise 1 Chlor-Tablette in den blauen Chlorbehälter geben, um den Chlorspiegel aufrechtzuerhalten."
         ],
         fireplaceTitle: "🔥 Kamin",
         fireplaceIntro: "Der Kamin kann verwendet werden, um die Hütte zu heizen. Stellen Sie sicher, dass keine Brandgefahr besteht, und löschen Sie den Kamin immer, bevor Sie den Ort verlassen.",
@@ -211,7 +214,8 @@ const translations = {
             "🌡️ Set the temperature to 38 degrees upon arrival by pressing the display on the jacuzzi.",
             "🔋 Remember to put the lid on the jacuzzi when not in use to save energy!",
             "🚿 Before use, everyone who wants to use the jacuzzi takes a quick shower for a pleasant and clean environment.",
-            "💊 After use, add 1 chlorine tablet to keep the water clean."
+            "💊 Chlorine tablet should only be added as needed.",
+            "💊 Upon departure, place 1 chlorine tablet in the blue chlorine container to maintain chlorine levels."
         ],
         fireplaceTitle: "🔥 Fireplace",
         fireplaceIntro: "The fireplace can be used to heat the cabin. Ensure there is no fire hazard, and always extinguish the fireplace before leaving.",
