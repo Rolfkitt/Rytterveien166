@@ -20,15 +20,14 @@ const translations = {
         jacuzziTitle: "🛁 Jacuzzi",
         jacuzziIntro: "Vi tar godt vare på jacuzzien for å sikre en hyggelig opplevelse for dere. Her er siste vedlikehold:",
         jacuzziList: [
-            "Vannskifte: Sist utført 26. desember 2025",
-            "Kvalitetssjekk (klorinnhold): Sist utført 26. desember 2025"
+            "Vannskifte: Sist utført 15. desember 2024",
+            "Kvalitetssjekk (klorinnhold): Sist utført 20. desember 2024"
         ],
         jacuzziAdvice: [
             "🌡️ Sett temperaturen til 38 grader ved ankomst ved å trykke på displayet på jacuzzien.",
             "🔋 Husk å sette lokket på jacuzzien når det ikke er i bruk for å spare energi!",
             "🚿 Før bruk tar alle som skal bruke jacuzzien en kjapp dusj for et hyggelig og rent miljø.",
-            "💊 Klor tablet skal kun tilsettes ved behov.",
-            "💊 Ved avreise settes 1 stk klortablett i den blå klorbeholderen for å opprettholde klornivået."
+            "💊 Etter bruk settes 1 stk klor tablett oppi for å holde vannet rent."
         ],
         fireplaceTitle: "🔥 Peis",
         fireplaceIntro: "Peisen kan brukes til å varme opp hytta. Sørg for at det ikke er brannfare, og slukk alltid peisen før dere forlater stedet.",
@@ -82,15 +81,14 @@ const translations = {
         jacuzziTitle: "🛁 Jacuzzi",
         jacuzziIntro: "Vi tager godt vare på jacuzzien for at sikre en hyggelig oplevelse for jer. Her er sidste vedligeholdelse:",
         jacuzziList: [
-            "Vandskifte: Sidst udført 26. december 2025",
-            "Kvalitetstjek (klorindhold): Sidst udført 26. december 2025"
+            "Vandskifte: Sidst udført 15. december 2024",
+            "Kvalitetstjek (klorindhold): Sidst udført 20. december 2024"
         ],
         jacuzziAdvice: [
             "🌡️ Sæt temperaturen til 38 grader ved ankomst ved at trykke på displayet på jacuzzien.",
             "🔋 Husk at sætte låget på jacuzzien, når det ikke er i brug for at spare energi!",
             "🚿 Før brug tager alle som skal bruge jacuzzien et hurtigt bad for et hyggeligt og rent miljø.",
-            "💊 Klor tablet skal kun tilsættes ved behov.",
-            "💊 Ved afrejse sættes 1 stk klortablet i den blå klorbeholder for at opretholde klorniveauet."
+            "💊 Efter brug sættes 1 stk klor tablet op i for at holde vandet rent."
         ],
         fireplaceTitle: "🔥 Peis",
         fireplaceIntro: "Peisen kan brukes til å varme opp hytta. Sørg for at det ikke er brannfare, og slukk alltid peisen før dere forlater stedet.",
@@ -144,15 +142,14 @@ const translations = {
         jacuzziTitle: "🛁 Jacuzzi",
         jacuzziIntro: "Wir kümmern uns gut um den Jacuzzi, um Ihnen ein angenehmes Erlebnis zu garantieren. Hier ist die letzte Wartung:",
         jacuzziList: [
-            "Wasserwechsel: Zuletzt durchgeführt am 26. Dezember 2025",
-            "Qualitätsprüfung (Chlorgehalt): Zuletzt durchgeführt am 26. Dezember 2025"
+            "Wasserwechsel: Zuletzt durchgeführt am 15. Dezember 2024",
+            "Qualitätsprüfung (Chlorgehalt): Zuletzt durchgeführt am 20. Dezember 2024"
         ],
         jacuzziAdvice: [
             "🌡️ Stellen Sie die Temperatur bei Ankunft auf 38 Grad ein, indem Sie auf das Display des Jacuzzis drücken.",
             "🔋 Denken Sie daran, den Deckel auf den Jacuzzi zu legen, wenn er nicht in Gebrauch ist, um Energie zu sparen!",
             "🚿 Vor der Nutzung nehmen alle, die den Jacuzzi benutzen möchten, eine kurze Dusche für eine angenehme und saubere Umgebung.",
-            "💊 Chlor-Tablette soll nur bei Bedarf hinzugefügt werden.",
-            "💊 Bei Abreise 1 Chlor-Tablette in den blauen Chlorbehälter geben, um den Chlorspiegel aufrechtzuerhalten."
+            "💊 Nach der Nutzung 1 Chlor-Tablette hineingeben, um das Wasser sauber zu halten."
         ],
         fireplaceTitle: "🔥 Kamin",
         fireplaceIntro: "Der Kamin kann verwendet werden, um die Hütte zu heizen. Stellen Sie sicher, dass keine Brandgefahr besteht, und löschen Sie den Kamin immer, bevor Sie den Ort verlassen.",
@@ -207,15 +204,14 @@ const translations = {
         jacuzziTitle: "🛁 Jacuzzi",
         jacuzziIntro: "We take good care of the jacuzzi to ensure a pleasant experience for you. Here is the latest maintenance:",
         jacuzziList: [
-            "Water change: Last performed December 26, 2025",
-            "Quality check (chlorine content): Last performed December 26, 2025"
+            "Water change: Last performed December 15, 2024",
+            "Quality check (chlorine content): Last performed December 20, 2024"
         ],
         jacuzziAdvice: [
             "🌡️ Set the temperature to 38 degrees upon arrival by pressing the display on the jacuzzi.",
             "🔋 Remember to put the lid on the jacuzzi when not in use to save energy!",
             "🚿 Before use, everyone who wants to use the jacuzzi takes a quick shower for a pleasant and clean environment.",
-            "💊 Chlorine tablet should only be added as needed.",
-            "💊 Upon departure, place 1 chlorine tablet in the blue chlorine container to maintain chlorine levels."
+            "💊 After use, add 1 chlorine tablet to keep the water clean."
         ],
         fireplaceTitle: "🔥 Fireplace",
         fireplaceIntro: "The fireplace can be used to heat the cabin. Ensure there is no fire hazard, and always extinguish the fireplace before leaving.",
