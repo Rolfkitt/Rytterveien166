@@ -43,10 +43,10 @@ const translations = {
         departureText: "Vi setter stor pris på om dere kan gjøre følgende før dere forlater hytta:",
         departureOutro: "Håper at dere har hatt et hyggelig opphold!",
         departureList: [
-            "Ta alt brukte håndklær og sengetøy og kast dem i vaskemaskinen.",
-            "Skru av vannet.",
+            "Ta alt brukte håndklær og sengetøy og legg dem i vaskemaskinen.",
             "Heng opp nøkkelen tilbake i nøkkelboksen på utsiden av hoveddøren.",
-            "Sjekk at alle vinduer og dører er lukket."
+            "Sjekk at alle vinduer og dører er lukket.",
+            "Sjekk at boblebad deksel er satt på jacuzzi og festet opp med jekkestropp."
         ],
         wasteTitle: "♻️ Søppelsortering",
         wasteText: "Vi ber om at dere sorterer søppelet som følger: Bilder av søppelstasjonen vil bli lagt til her.",
@@ -104,10 +104,10 @@ const translations = {
         departureText: "Venligst gør følgende før I forlader hytten:",
         departureOutro: "Håber at I har haft et hyggeligt ophold!",
         departureList: [
-            "Tag alt brugt håndklæder og sengetøj og kast dem i vaskemaskinen.",
-            "Sluk for vandet.",
+            "Tag alt brugt håndklæder og sengetøj og læg dem i vaskemaskinen.",
             "Hæng nøglen tilbage i nøgleboksen på ydersiden af hoveddøren.",
-            "Tjek at alle vinduer og døre er lukket."
+            "Tjek at alle vinduer og døre er lukket.",
+            "Tjek at boblebad låg er sat på jacuzzi og fastgjort med jekkestropp."
         ],
         wasteTitle: "♻️ Affaldssortering",
         wasteText: "Vi beder jer om at sortere affaldet som følger: Billeder af affaldsstationen vil blive tilføjet her.",
@@ -166,10 +166,10 @@ const translations = {
         departureText: "Bitte tun Sie Folgendes, bevor Sie die Hütte verlassen:",
         departureOutro: "Wir hoffen, Sie hatten einen angenehmen Aufenthalt!",
         departureList: [
-            "Nehmen Sie alle gebrauchten Handtücher und Bettwäsche und werfen Sie sie in die Waschmaschine.",
-            "Schalten Sie das Wasser ab.",
+            "Nehmen Sie alle gebrauchten Handtücher und Bettwäsche und legen Sie sie in die Waschmaschine.",
             "Hängen Sie den Schlüssel zurück in die Schlüsselbox außen an der Haustür.",
-            "Überprüfen Sie, dass alle Fenster und Türen geschlossen sind."
+            "Überprüfen Sie, dass alle Fenster und Türen geschlossen sind.",
+            "Überprüfen Sie, dass der Whirlpool-Deckel auf der Jacuzzi sitzt und mit dem Spanngurt befestigt ist."
         ],
         wasteTitle: "♻️ Abfallsortierung",
         wasteText: "Wir bitten Sie, den Abfall wie folgt zu sortieren: Bilder der Abfallstation werden hier hinzugefügt.",
@@ -228,9 +228,9 @@ const translations = {
         departureOutro: "We hope you had a pleasant stay!",
         departureList: [
             "Take all used towels and bed linens and put them in the washing machine.",
-            "Turn off the water.",
             "Hang the key back in the key box outside the main door.",
-            "Check that all windows and doors are closed."
+            "Check that all windows and doors are closed.",
+            "Check that the hot tub lid is on the jacuzzi and secured with the ratchet strap."
         ],
         wasteTitle: "♻️ Waste Sorting",
         wasteText: "We ask that you sort the waste as follows: Pictures of the waste station will be added here.",
