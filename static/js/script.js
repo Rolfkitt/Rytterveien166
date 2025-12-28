@@ -27,8 +27,8 @@ const translations = {
             "🌡️ Sett temperaturen til 38 grader ved ankomst ved å trykke på displayet på jacuzzien.",
             "🔋 Husk å sette lokket på jacuzzien når det ikke er i bruk for å spare energi!",
             "🚿 Før bruk tar alle som skal bruke jacuzzien en kjapp dusj for et hyggelig og rent miljø.",
-            "💊 Tilsette klor ved behov.",
-            "💊 Før avreise, pass på at det er en langtidsvirkende klortablett i den blå beholderen som er oppi boblebadet."
+            "🧪 Tilsette klor ved behov.",
+            "🧪 Før avreise, pass på at det er en langtidsvirkende klortablett i den blå beholderen som er oppi boblebadet."
         ],
         jacuzziImagesText: "Bilder av hvordan spabadet festes:",
         fireplaceTitle: "🔥 Peis",
@@ -101,8 +101,8 @@ const translations = {
             "🌡️ Sæt temperaturen til 38 grader ved ankomst ved at trykke på displayet på jacuzzien.",
             "🔋 Husk at sætte låget på jacuzzien, når det ikke er i brug for at spare energi!",
             "🚿 Før brug tager alle som skal bruge jacuzzien et hurtigt bad for et hyggeligt og rent miljø.",
-            "💊 Tilføj klor efter behov.",
-            "💊 Før afrejse, sørg for at der er en langtidsvirkende klor tablet i den blå beholder, som er oppe i boblebadet."
+            "🧪 Tilføj klor efter behov.",
+            "🧪 Før afrejse, sørg for at der er en langtidsvirkende klor tablet i den blå beholder, som er oppe i boblebadet."
         ],
         jacuzziImagesText: "Billeder af hvordan spabadet fastgøres:",
         fireplaceTitle: "🔥 Peis",
@@ -175,8 +175,8 @@ const translations = {
             "🌡️ Stellen Sie die Temperatur bei Ankunft auf 38 Grad ein, indem Sie auf das Display des Jacuzzis drücken.",
             "🔋 Denken Sie daran, den Deckel auf den Jacuzzi zu legen, wenn er nicht in Gebrauch ist, um Energie zu sparen!",
             "🚿 Vor der Nutzung nehmen alle, die den Jacuzzi benutzen möchten, eine kurze Dusche für eine angenehme und saubere Umgebung.",
-            "💊 Chlor nach Bedarf hinzufügen.",
-            "💊 Vor Abreise, achten Sie darauf, dass eine langwirksame Chlor-Tablette im blauen Behälter ist, der sich im Whirlpool befindet."
+            "🧪 Chlor nach Bedarf hinzufügen.",
+            "🧪 Vor Abreise, achten Sie darauf, dass eine langwirksame Chlor-Tablette im blauen Behälter ist, der sich im Whirlpool befindet."
         ],
         jacuzziImagesText: "Bilder davon, wie das Spa befestigt wird:",
         fireplaceTitle: "🔥 Kamin",
@@ -250,8 +250,8 @@ const translations = {
             "🌡️ Set the temperature to 38 degrees upon arrival by pressing the display on the jacuzzi.",
             "🔋 Remember to put the lid on the jacuzzi when not in use to save energy!",
             "🚿 Before use, everyone who wants to use the jacuzzi takes a quick shower for a pleasant and clean environment.",
-            "💊 Add chlorine as needed.",
-            "💊 Before departure, ensure there is a long-acting chlorine tablet in the blue container that is inside the jacuzzi."
+            "🧪 Add chlorine as needed.",
+            "🧪 Before departure, ensure there is a long-acting chlorine tablet in the blue container that is inside the jacuzzi."
         ],
         jacuzziImagesText: "Pictures of how the hot tub is secured:",
         fireplaceTitle: "🔥 Fireplace",
