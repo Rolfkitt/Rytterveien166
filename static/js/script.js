@@ -2,7 +2,7 @@ const translations = {
     no: {
         title: "Velkommen til Rytterveien 166",
         subtitle: "Guide og hjelpeside",
-        tocTitle: "Innholdsfortegnelse",
+        tocTitle: "Innholds<br>fortegnelse",
         waterToc: "💧 Vannforsyning",
         bedroomsToc: "🛏️ Soverom",
         jacuzziToc: "🛁 Jacuzzi",
@@ -75,7 +75,7 @@ const translations = {
     da: {
         title: "Velkommen til Rytterveien 166",
         subtitle: "Guide og hjælpeside",
-        tocTitle: "Indholdsfortegnelse",
+        tocTitle: "Indholds<br>fortegnelse",
         waterToc: "💧 Vandforsyning",
         bedroomsToc: "🛏️ Soveværelser",
         jacuzziToc: "🛁 Jacuzzi",
@@ -149,7 +149,7 @@ const translations = {
     de: {
         title: "Willkommen in der Rytterveien 166",
         subtitle: "Leitfaden und Hilfeseite",
-        tocTitle: "Inhaltsverzeichnis",
+        tocTitle: "Inhalts<br>verzeichnis",
         waterToc: "💧 Wasserversorgung",
         bedroomsToc: "🛏️ Schlafzimmer",
         jacuzziToc: "🛁 Jacuzzi",
@@ -224,7 +224,7 @@ const translations = {
     en: {
         title: "Welcome to Rytterveien 166",
         subtitle: "Guide and help page",
-        tocTitle: "Table of Contents",
+        tocTitle: "Table of<br>Contents",
         waterToc: "💧 Water Supply",
         bedroomsToc: "🛏️ Bedrooms",
         jacuzziToc: "🛁 Jacuzzi",
@@ -303,7 +303,7 @@ function updateContent(lang = 'no') {
 
     document.querySelector('.hero h1').textContent = trans.title;
     document.getElementById('subtitle').textContent = trans.subtitle;
-    document.getElementById('toc-title').textContent = trans.tocTitle;
+    document.getElementById('toc-title').innerHTML = trans.tocTitle;
     document.querySelector('#toc a[href="#water"]').textContent = trans.waterToc;
     document.querySelector('#toc a[href="#bedrooms"]').textContent = trans.bedroomsToc;
     document.querySelector('#toc a[href="#jacuzzi"]').textContent = trans.jacuzziToc;
