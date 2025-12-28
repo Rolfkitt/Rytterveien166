@@ -58,7 +58,7 @@ const translations = {
         cafeIntro: "Kafeen ligger rett ved siden av hytten, kun 200 meter gangavstand og er en fin spasertur fra hytta. Her kan dere nyte en god kopp kaffe eller noe å spise.",
         weatherToc: "🌤️ Værmelding",
         weatherTitle: "🌤️ Værmelding",
-        weatherIntro: "Her er værvarslet for Gautefall de neste 2 dagene.",
+        weatherIntro: "Værmeldingen oppdateres automatisk og viser været for Gautefall-området.",
     },
     da: {
         title: "Velkommen til Rytterveien 166",
