@@ -51,8 +51,7 @@ const translations = {
             "Sjekk at boblebad deksel er satt på jacuzzi og festet opp med jekkestropp."
         ],
         wasteTitle: "♻️ Søppelsortering",
-        wasteText: "Vi ber om at dere sorterer søppelet som følger: Bilder av søppelstasjonen vil bli lagt til her.",
-        wasteImageText: "Her er bilde av sorteringsstasjonene:",
+        wasteText: "Vi ber om at dere sorterer søppelet og kaster søppelet ved sorteringsstasjonene nede ved veien, her er bilde:",
         skiTitle: "🎿 Skibakken",
         skiIntro: "Nyt en dag med ski i Gautefall skibakken. Her er løypekartet og informasjon om heiskortpriser.",
         skiPrices: "For priser på heiskort, se nedenfor:",
@@ -126,8 +125,7 @@ const translations = {
             "Tjek at boblebad låg er sat på jacuzzi og fastgjort med jekkestropp."
         ],
         wasteTitle: "♻️ Affaldssortering",
-        wasteText: "Vi beder jer om at sortere affaldet som følger: Billeder af affaldsstationen vil blive tilføjet her.",
-        wasteImageText: "Her er bilde af sorteringsstasjonene:",
+        wasteText: "Vi beder jer om at sortere affaldet og kaste affaldet ved sorteringsstationerne nede ved vejen, her er billede:",
         skiTitle: "🎿 Skibakken",
         skiIntro: "Nyd en dag med ski i Gautefall skibakken. Her er løypekortet og information om heiskortpriser.",
         skiPrices: "For priser på heiskort, se nedenfor:",
@@ -202,8 +200,7 @@ const translations = {
             "Überprüfen Sie, dass der Whirlpool-Deckel auf der Jacuzzi sitzt und mit dem Spanngurt befestigt ist."
         ],
         wasteTitle: "♻️ Abfallsortierung",
-        wasteText: "Wir bitten Sie, den Abfall wie folgt zu sortieren: Bilder der Abfallstation werden hier hinzugefügt.",
-        wasteImageText: "Hier ist ein Bild der Sortierstationen:",
+        wasteText: "Wir bitten Sie, den Abfall zu sortieren und den Abfall bei den Sortierstationen unten an der Straße zu entsorgen, hier ist ein Bild:",
         skiTitle: "🎿 Skibakken",
         skiIntro: "Genießen Sie einen Tag mit Skifahren in der Gautefall Skibakken. Hier ist die Pistenkarte und Informationen zu Liftkartenpreisen.",
         skiPrices: "Für Preise von Liftkarten, siehe unten:",
@@ -277,8 +274,7 @@ const translations = {
             "Check that the hot tub lid is on the jacuzzi and secured with the ratchet strap."
         ],
         wasteTitle: "♻️ Waste Sorting",
-        wasteText: "We ask that you sort the waste as follows: Pictures of the waste station will be added here.",
-        wasteImageText: "Here is a picture of the sorting stations:",
+        wasteText: "We ask that you sort the waste and dispose of the waste at the sorting stations down by the road, here is a picture:",
         skiTitle: "🎿 Ski Slope",
         skiIntro: "Enjoy a day of skiing at Gautefall ski slope. Here is the trail map and information on lift ticket prices.",
         skiPrices: "For lift ticket prices, see below:",
@@ -372,8 +368,6 @@ function updateContent(lang = 'no') {
     outroP.textContent = trans.departureOutro;
     document.querySelector('#waste h2').textContent = trans.wasteTitle;
     document.querySelector('#waste p').textContent = trans.wasteText;
-    const wasteImageText = document.querySelector('#waste-image-text');
-    if (wasteImageText) wasteImageText.textContent = trans.wasteImageText;
     document.querySelector('#ski h2').textContent = trans.skiTitle;
     document.querySelector('#ski-intro').textContent = trans.skiIntro;
     document.querySelector('#ski-prices').textContent = trans.skiPrices;
