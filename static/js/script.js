@@ -52,6 +52,7 @@ const translations = {
         ],
         wasteTitle: "♻️ Søppelsortering",
         wasteText: "Vi ber om at dere sorterer søppelet som følger: Bilder av søppelstasjonen vil bli lagt til her.",
+        wasteImageText: "Her er bilde av sorteringsstasjonene:",
         skiTitle: "🎿 Skibakken",
         skiIntro: "Nyt en dag med ski i Gautefall skibakken. Her er løypekartet og informasjon om heiskortpriser.",
         skiPrices: "For priser på heiskort, se nedenfor:",
@@ -126,6 +127,7 @@ const translations = {
         ],
         wasteTitle: "♻️ Affaldssortering",
         wasteText: "Vi beder jer om at sortere affaldet som følger: Billeder af affaldsstationen vil blive tilføjet her.",
+        wasteImageText: "Her er bilde af sorteringsstasjonene:",
         skiTitle: "🎿 Skibakken",
         skiIntro: "Nyd en dag med ski i Gautefall skibakken. Her er løypekortet og information om heiskortpriser.",
         skiPrices: "For priser på heiskort, se nedenfor:",
@@ -201,6 +203,7 @@ const translations = {
         ],
         wasteTitle: "♻️ Abfallsortierung",
         wasteText: "Wir bitten Sie, den Abfall wie folgt zu sortieren: Bilder der Abfallstation werden hier hinzugefügt.",
+        wasteImageText: "Hier ist ein Bild der Sortierstationen:",
         skiTitle: "🎿 Skibakken",
         skiIntro: "Genießen Sie einen Tag mit Skifahren in der Gautefall Skibakken. Hier ist die Pistenkarte und Informationen zu Liftkartenpreisen.",
         skiPrices: "Für Preise von Liftkarten, siehe unten:",
@@ -275,6 +278,7 @@ const translations = {
         ],
         wasteTitle: "♻️ Waste Sorting",
         wasteText: "We ask that you sort the waste as follows: Pictures of the waste station will be added here.",
+        wasteImageText: "Here is a picture of the sorting stations:",
         skiTitle: "🎿 Ski Slope",
         skiIntro: "Enjoy a day of skiing at Gautefall ski slope. Here is the trail map and information on lift ticket prices.",
         skiPrices: "For lift ticket prices, see below:",
@@ -368,6 +372,8 @@ function updateContent(lang = 'no') {
     outroP.textContent = trans.departureOutro;
     document.querySelector('#waste h2').textContent = trans.wasteTitle;
     document.querySelector('#waste p').textContent = trans.wasteText;
+    const wasteImageText = document.querySelector('#waste-image-text');
+    if (wasteImageText) wasteImageText.textContent = trans.wasteImageText;
     document.querySelector('#ski h2').textContent = trans.skiTitle;
     document.querySelector('#ski-intro').textContent = trans.skiIntro;
     document.querySelector('#ski-prices').textContent = trans.skiPrices;
