@@ -353,7 +353,7 @@ function updateContent(lang = 'no') {
         });
     }
     document.querySelector('#sauna h2').textContent = trans.saunaTitle;
-    const saunaP = document.querySelector('#sauna p');
+    const saunaP = document.querySelector('#sauna-text');
     if (saunaP) saunaP.textContent = trans.saunaText;
     document.querySelector('#departure h2').textContent = trans.departureTitle;
     document.querySelector('#departure p').textContent = trans.departureText;
