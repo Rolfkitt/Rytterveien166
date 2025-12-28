@@ -28,6 +28,8 @@
                 <li><a href="#water">Vannforsyning</a></li>
                 <li><a href="#bedrooms">Soverom</a></li>
                 <li><a href="#jacuzzi">Boblebad</a></li>
+                <li><a href="#climate">Klima</a></li>
+                <li><a href="#cafe">Kafe</a></li>
                 <li><a href="#departure">Ved Avreise</a></li>
                 <li><a href="#waste">Søppelsortering</a></li>
             </ul>
@@ -35,7 +37,6 @@
 
         <section id="water">
             <h2>Vannforsyning</h2>
-            <p>Vannkranen må åpnes når dere ankommer og lukkes når dere forlater hytta. Dette sikrer at rørene ikke fryser om vinteren.</p>
         </section>
 
         <section id="bedrooms">
@@ -45,25 +46,50 @@
 
         <section id="jacuzzi">
             <h2>Boblebad</h2>
-            <p>Sist gang vannet ble skiftet: <input type="text" id="water-change" placeholder="Fyll inn dato"></p>
-            <p>Sist gang boblebadet ble målt for klorinnhold: <input type="text" id="chlorine-check" placeholder="Fyll inn dato"></p>
+            <p>Spabadet er satt til 38 grader og kan justeres opp noen grader om ønskelig.</p>
+            <p>Vannskift ble utført 26.12.2025.</p>
+            <p>Kvalitetssjekk av klor ble utført 26.12.2025.</p>
+            <p>Etter bruk settes 1 stk klor tablett oppi vannet for å holde vannet rent, eller ved behov.</p>
+            <p>Før avreise er det fint om det settes en klortablett i den blå klorbeholderen slik at klornivå opprettholdes.</p>
+            <img src="{{ url_for('static', filename='images/BAthtub spanner.jpg') }}" alt="Bathtub spanner" style="max-width: 100%; height: auto;">
+            <img src="{{ url_for('static', filename='images/BAthtub spanner 2.jpg') }}" alt="Bathtub spanner 2" style="max-width: 100%; height: auto;">
+            <img src="{{ url_for('static', filename='images/Bathtub with spanner.jpg') }}" alt="Bathtub with spanner" style="max-width: 100%; height: auto;">
+        </section>
+
+        <section id="climate">
+            <h2>Klima</h2>
+            <p>Anbefalt temperatur på varmekabel: gang 22°C, baderom 24°C, kjøkken 20°C.</p>
+            <p>Temperatur inne kan justeres med pluss og minus på AI condition controller.</p>
+            <img src="{{ url_for('static', filename='images/Hallway temperature.jpg') }}" alt="Hallway temperature" style="max-width: 100%; height: auto;">
+            <img src="{{ url_for('static', filename='images/Temp in house and hot tub.jpg') }}" alt="Temp in house and hot tub" style="max-width: 100%; height: auto;">
+            <img src="{{ url_for('static', filename='images/Temperature Bathroom.jpg') }}" alt="Temperature bathroom" style="max-width: 100%; height: auto;">
+            <img src="{{ url_for('static', filename='images/Air condition controller.jpg') }}" alt="AI condition controller" style="max-width: 100%; height: auto;">
+        </section>
+
+        <section id="cafe">
+            <h2>Kafe</h2>
+            <p id="cafe-intro"></p>
+            <img src="{{ url_for('static', filename='images/ryttersprank-kafe.jpg') }}" alt="Ryttersprang Kafe" style="max-width: 100%; height: auto;">
+            <img src="{{ url_for('static', filename='images/ryttersprang meny kart.png') }}" alt="Ryttersprang Meny" style="max-width: 100%; height: auto;">
+            <img src="{{ url_for('static', filename='images/Kafe avstand til hytte.png') }}" alt="Avstand fra hytta til kafe" style="max-width: 100%; height: auto;">
         </section>
 
         <section id="departure">
             <h2>Ved Avreise</h2>
-            <p>Vennligst gjør følgende før dere forlater hytta:</p>
+            <p>Vi setter stor pris på om dere kan gjøre følgende før dere forlater hytta:</p>
             <ul>
-                <li>Ta alt brukte håndklær og sengetøy og kast dem i vaskemaskinen.</li>
-                <li>Skru av vannet.</li>
+                <li>Vi setter stor pris på at dere tar alt brukte håndklær og sengetøy og legger dem i vaskemaskinen.</li>
                 <li>Heng opp nøkkelen tilbake i nøkkelboksen på utsiden av hoveddøren.</li>
                 <li>Sjekk at alle vinduer og dører er lukket.</li>
+                <li>Sjekk at lokket på jacuzzi sitter godt fast og er strammet opp med jekkestropp.</li>
             </ul>
         </section>
 
         <section id="waste">
             <h2>Søppelsortering</h2>
             <p>Vi ber om at dere sorterer søppelet som følger:</p>
-            <p>Bilder av søppelstasjonen vil bli lagt til her.</p>
+            <p>Her er bilde av sorteringsstasjonene:</p>
+            <img src="{{ url_for('static', filename='images/sorteringsstasjon.png') }}" alt="Sorteringsstasjon" style="max-width: 100%; height: auto;">
             <!-- Bilder kan legges til her -->
         </section>
     </div>
