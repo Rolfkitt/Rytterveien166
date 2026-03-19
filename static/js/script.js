@@ -3,6 +3,7 @@ const translations = {
         title: "Velkommen til Rytterveien 166",
         subtitle: "Guide og hjelpeside",
         tocTitle: "Innholds<br>fortegnelse",
+        navigationToc: "🗺️ Veibeskrivelse",
         waterToc: "💧 Vannforsyning",
         bedroomsToc: "🛏️ Soverom",
         jacuzziToc: "🛁 Jacuzzi",
@@ -15,6 +16,8 @@ const translations = {
         departureToc: "📋 Ved Avreise",
         waterTitle: "💧 Vannforsyning",
         waterText: "Vannkrana er åpen og vannet er tilgjengelig.",
+        navigationTitle: "🗺️ Veibeskrivelse",
+        navigationText: "OBS! Vi har erfart at de siste 200 meterne til hytta viser Google Maps feil veibeskrivelse. Endepunktet kan bli vist opptil 100 meter feil. Vi anbefaler å bruke 1881-kart (kart.1881.no/dranged) som viser korrekt adresse. Se bildet under for riktig posisjon.",
         bedroomsTitle: "🛏️ Soverom",
         bedroomsText: "Soverommet er ryddet og klargjort med rent sengetøy og håndklær.",
         jacuzziTitle: "🛁 Jacuzzi",
@@ -75,6 +78,7 @@ const translations = {
         title: "Velkommen til Rytterveien 166",
         subtitle: "Guide og hjælpeside",
         tocTitle: "Indholds<br>fortegnelse",
+        navigationToc: "🗺️ Vejbeskrivelse",
         waterToc: "💧 Vandforsyning",
         bedroomsToc: "🛏️ Soveværelser",
         jacuzziToc: "🛁 Jacuzzi",
@@ -88,6 +92,8 @@ const translations = {
         departureToc: "📋 Ved Afrejse",
         waterTitle: "Vandforsyning",
         waterText: "Vandhanen er åben og vandet er tilgængeligt.",
+        navigationTitle: "🗺️ Vejbeskrivelse",
+        navigationText: "OBS! Vi har erfaret, at Google Maps viser en forkert vejbeskrivelse for de sidste 200 meter til hytten. Slutpunktet kan vises op til 100 meter forkert. Vi anbefaler at bruge 1881-kort (kart.1881.no/dranged), som viser den korrekte adresse. Se billedet nedenfor for den korrekte position.",
         bedroomsTitle: "Soveværelser",
         bedroomsText: "Soveværelset er ryddet og gjort klar med rent sengetøj og håndklæder.",
         jacuzziTitle: "🛁 Jacuzzi",
@@ -148,6 +154,7 @@ const translations = {
         title: "Willkommen in der Rytterveien 166",
         subtitle: "Leitfaden und Hilfeseite",
         tocTitle: "Inhalts<br>verzeichnis",
+        navigationToc: "🗺️ Wegbeschreibung",
         waterToc: "💧 Wasserversorgung",
         bedroomsToc: "🛏️ Schlafzimmer",
         jacuzziToc: "🛁 Jacuzzi",
@@ -161,6 +168,8 @@ const translations = {
         departureToc: "📋 Bei Abreise",
         waterTitle: "Wasserversorgung",
         waterText: "Der Wasserhahn ist geöffnet und das Wasser ist verfügbar.",
+        navigationTitle: "🗺️ Wegbeschreibung",
+        navigationText: "ACHTUNG! Wir haben festgestellt, dass Google Maps in den letzten 200 Metern zur Hütte eine falsche Wegbeschreibung anzeigt. Der Endpunkt kann um bis zu 100 Meter falsch angezeigt werden. Wir empfehlen die Verwendung von 1881-Karten (kart.1881.no/dranged), die die korrekte Adresse anzeigen. Siehe das Bild unten für die richtige Position.",
         bedroomsTitle: "Schlafzimmer",
         bedroomsText: "Das Schlafzimmer ist aufgeräumt und mit frischer Bettwäsche und Handtüchern vorbereitet.",
         jacuzziTitle: "🛁 Jacuzzi",
@@ -222,6 +231,7 @@ const translations = {
         title: "Welcome to Rytterveien 166",
         subtitle: "Guide and help page",
         tocTitle: "Table of<br>Contents",
+        navigationToc: "🗺️ Directions",
         waterToc: "💧 Water Supply",
         bedroomsToc: "🛏️ Bedrooms",
         jacuzziToc: "🛁 Jacuzzi",
@@ -235,6 +245,8 @@ const translations = {
         departureToc: "📋 Upon Departure",
         waterTitle: "Water Supply",
         waterText: "The water tap is open and the water is available.",
+        navigationTitle: "🗺️ Directions",
+        navigationText: "NOTE! We have found that Google Maps shows incorrect directions for the last 200 meters to the cabin. The destination can be displayed up to 100 meters off. We recommend using 1881 maps (kart.1881.no/dranged) which shows the correct address. See the image below for the correct position.",
         bedroomsTitle: "Bedrooms",
         bedroomsText: "The bedroom is tidied and prepared with clean linens and towels.",
         jacuzziTitle: "🛁 Jacuzzi",
@@ -300,6 +312,7 @@ function updateContent(lang = 'no') {
     document.querySelector('.hero h1').textContent = trans.title;
     document.getElementById('subtitle').textContent = trans.subtitle;
     document.getElementById('toc-title').innerHTML = trans.tocTitle;
+    document.querySelector('#toc a[href="#navigation"]').textContent = trans.navigationToc;
     document.querySelector('#toc a[href="#water"]').textContent = trans.waterToc;
     document.querySelector('#toc a[href="#bedrooms"]').textContent = trans.bedroomsToc;
     document.querySelector('#toc a[href="#jacuzzi"]').textContent = trans.jacuzziToc;
@@ -313,6 +326,8 @@ function updateContent(lang = 'no') {
     document.querySelector('#toc a[href="#departure"]').textContent = trans.departureToc;
     document.querySelector('#water h2').textContent = trans.waterTitle;
     document.querySelector('#water p').textContent = trans.waterText;
+    document.querySelector('#navigation h2').textContent = trans.navigationTitle;
+    document.querySelector('#navigation-text').textContent = trans.navigationText;
     document.querySelector('#bedrooms h2').textContent = trans.bedroomsTitle;
     document.querySelector('#bedrooms p').textContent = trans.bedroomsText;
     document.querySelector('#jacuzzi h2').textContent = trans.jacuzziTitle;
