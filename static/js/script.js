@@ -19,7 +19,7 @@ const translations = {
         navigationTitle: "🗺️ Veibeskrivelse",
         navigationText: "OBS! Vi har erfart at de siste 200 meterne til hytta viser Google Maps feil veibeskrivelse. Endepunktet kan bli vist opptil 100 meter feil. Vi anbefaler å bruke 1881-kart (kart.1881.no/dranged) som viser korrekt adresse. Se bildet under for riktig posisjon.",
         bedroomsTitle: "🛏️ Soverom",
-        bedroomsText: "Soverommet er ryddet og klargjort med rent sengetøy og håndklær.",
+        bedroomsText: "Soverommet er ryddet med dyner og puter.",
         jacuzziTitle: "🛁 Jacuzzi",
         jacuzziIntro: "Vi tar godt vare på jacuzzien for å sikre en hyggelig opplevelse for våre gjester. Her er siste vedlikehold:",
         jacuzziList: [
