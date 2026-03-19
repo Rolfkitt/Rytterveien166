@@ -499,10 +499,9 @@ document.getElementById('language').addEventListener('change', function() {
     fetchWeather(lang);
 });
 
-// Initial load
-window.addEventListener('load', () => {
-    updateContent();
-    fetchWeather();
+document.addEventListener('DOMContentLoaded', function() {
+    updateContent('no');
+    fetchWeather('no');
 });
 
 document.getElementById('download-pdf').addEventListener('click', function() {
